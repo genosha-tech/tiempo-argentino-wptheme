@@ -9,7 +9,7 @@
             <div class="articles-and-btns">
                 <div
                     class="row articles-container d-flex flex-column flex-lg-row overflow-hidden justify-content-lg-between">
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -34,7 +34,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -62,7 +62,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -90,7 +90,7 @@
                 </div>
                 <div
                     class="row articles-container d-flex flex-column flex-lg-row overflow-hidden justify-content-lg-between">
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -115,7 +115,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column ">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column ">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -143,7 +143,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -171,7 +171,7 @@
                 </div>
                 <div
                     class="row articles-container d-none d-lg-flex flex-column flex-lg-row overflow-hidden justify-content-lg-between">
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -196,7 +196,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">
@@ -224,7 +224,7 @@
 
                         </div>
                     </div>
-                    <div class="articles-block mt-3 horizontal col-3 d-flex flex-row flex-lg-column">
+                    <div class="articles-block mt-3 horizontal col-4 d-flex flex-row flex-lg-column">
                         <div>
                             <a href="">
                                 <div class="img-container position-relative">

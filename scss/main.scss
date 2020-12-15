@@ -27,7 +27,7 @@ a {
 }
 
 .ta-context {
-  &.transparent-blue {
+  &.transparent-bg {
     background-color: transparent;
     .section-title {
       h4 {
@@ -38,6 +38,40 @@ a {
     .category-title {
       h4 {
         color: var(--ta-celeste);
+      }
+    }
+  }
+
+  &.light-blue-bg {
+    background-color: var(--ta-celeste-fondos);
+
+    .section-title {
+      h4 {
+        color: #000;
+      }
+    }
+
+    .category-title {
+      h4 {
+        color: var(--ta-celeste);
+      }
+    }
+  }
+
+  &.dark-blue-bg {
+    background-color: var(--ta-celeste);
+    .format,
+    .author {
+      p {
+        color: white;
+      }
+    }
+
+    .btns-container {
+      .ver-mas {
+        button {
+          color: white;
+        }
       }
     }
   }
