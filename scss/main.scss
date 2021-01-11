@@ -595,7 +595,7 @@ a {
       }
     }
 
-    .subnote {
+    .ta-subnote-block {
       border: 1px solid var(--ta-gris-subtexto);
       position: relative;
       .separator {
@@ -614,7 +614,7 @@ a {
       }
     }
 
-    .event {
+    .ta-event-block {
       border: 1px solid var(--ta-espectaculos);
 
       .title {
@@ -1016,7 +1016,7 @@ a {
 }
 
 .sub-blocks {
-  .articles-block {
+  .ta-articles-block {
     overflow: scroll;
     overflow-y: hidden;
 
@@ -1039,7 +1039,7 @@ a {
 
 .tiempo-blue-bg {
   .sub-blocks {
-    .articles-block {
+    .ta-articles-block {
       .article {
         .content {
           .article-info-container {
@@ -1185,7 +1185,7 @@ a {
   }
 }
 
-.socios-block {
+.ta-socios-block {
   border: 1px solid var(--ta-celeste);
   box-sizing: border-box;
   .title {
@@ -1238,7 +1238,7 @@ a {
   }
 }
 
-.author-block,
+.ta-author-block,
 .tag-block {
   border: 1px solid var(--ta-celeste);
   .profile {

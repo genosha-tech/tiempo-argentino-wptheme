@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="author-block px-3 py-4">
+        <div class="ta-author-block px-3 py-4">
             <div class="d-flex flex-column flex-md-row">
                 <div class="d-flex flex-row flex-md-column justify-content-between justify-content-md-start px-4">
                     <div class="profile  position-relative ">
