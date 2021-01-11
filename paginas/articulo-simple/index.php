@@ -59,7 +59,7 @@
     <div class="ta-context dark-blue-bg">
         <?php include_once('../../partes/relacionados-tema.php');  ?>
     </div>
-    <div class="container-md mb-2 p-0">
+    <div class="container-md p-0">
         <div class="separator"></div>
     </div>
     <div class="ta-context light-blue-bg">
