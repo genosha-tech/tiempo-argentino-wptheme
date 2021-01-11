@@ -1181,6 +1181,10 @@ a {
   color: var(--ta-celeste);
 }
 
+#more {
+  display: none;
+}
+
 @media (max-width: 992px) and (orientation: landscape) {
   .ta-socios-block .img-container {
     max-width: 60%;
