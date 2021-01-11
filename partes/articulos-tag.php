@@ -1,4 +1,4 @@
-<div class="container-with-header py-3">
+<div class="py-3">
     <div class="sub-blocks">
         <div class="container">
             <div class="articles-block d-flex flex-column flex-lg-row overflow-hidden justify-content-lg-between">

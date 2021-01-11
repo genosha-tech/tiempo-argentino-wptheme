@@ -163,6 +163,10 @@ a {
   &:focus {
     box-shadow: none;
   }
+
+  &.btn-link {
+    color: var(--ta-negro-texto) !important;
+  }
 }
 
 .search-bar-container {
@@ -355,12 +359,6 @@ a {
   }
 }
 
-.search-icon {
-  &.btn-link {
-    color: var(--ta-negro-texto) !important;
-  }
-}
-
 .banner-covid {
   background-color: var(--ta-gris-imagen);
 
@@ -441,6 +439,19 @@ a {
       span {
         @include red-hat-400;
       }
+    }
+  }
+}
+
+.section-title {
+  h4 {
+    @include red-hat-900;
+    font-size: 12px;
+    margin: 0;
+    color: #000;
+
+    span {
+      @include red-hat-400;
     }
   }
 }

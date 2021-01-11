@@ -1,4 +1,4 @@
-<div class="container-with-header py-3">
+<div class="py-3">
     <div class="container">
         <div class="section-title">
             <h4>NOTAS DE <span>VERÓNICA BENAIM</span></h4>

@@ -144,6 +144,9 @@ a {
 .search-icon:focus {
   box-shadow: none;
 }
+.search-icon.btn-link {
+  color: var(--ta-negro-texto) !important;
+}
 
 .search-bar-container {
   background-color: var(--ta-celeste-fondos);
@@ -298,10 +301,6 @@ a {
   margin-right: 10px;
 }
 
-.search-icon.btn-link {
-  color: var(--ta-negro-texto) !important;
-}
-
 .banner-covid {
   background-color: var(--ta-gris-imagen);
 }
@@ -360,6 +359,20 @@ a {
   color: #000;
 }
 .container-with-header .section-title h4 span {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section-title h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  margin: 0;
+  color: #000;
+}
+.section-title h4 span {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -1278,6 +1291,11 @@ a {
   }
 
   .container-with-header .section-title h4 {
+    font-size: 16px;
+    line-height: 21.17px;
+  }
+
+  .section-title h4 {
     font-size: 16px;
     line-height: 21.17px;
   }
