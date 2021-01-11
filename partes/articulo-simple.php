@@ -1,4 +1,4 @@
-<section class="articulo-simple text-right my-4">
+<div class="articulo-simple text-right my-4">
     <div class="container">
         <div class="text-left mx-auto">
             <div class="categories d-flex">
@@ -188,4 +188,4 @@
     <div class="container-md mb-2 p-0">
         <div class="separator"></div>
     </div>
-</section>
+</div>
