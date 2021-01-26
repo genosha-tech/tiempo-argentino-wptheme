@@ -8,7 +8,7 @@
                 <h4>FOTOGALERÍA</h4>
             </div>
         </div>
-        <div class="container mt-2">
+        <div class="container mt-2 p-0 p-md-3">
             <div id="fotogaleria2" class="fotogaleria2 carousel slide" data-ride="carousel" data-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -17,7 +17,7 @@
                                 <img class="d-block img-fluid w-100" src="../../assets/images/slide-photo.jpg"
                                     alt="First slide">
                             </div>
-                            <div class="col-12 col-md-4 ml-md-3 text-left">
+                            <div class="col-12 col-md-4 text-left mt-3 mt-md-0">
                                 <div class=" d-flex flex-row flex-md-column">
                                     <div class="format-icon mr-2 mb-2">
                                         <img src="../../assets/images/talleres-icon.svg" alt="" />
@@ -40,7 +40,7 @@
                                 <img class="d-block img-fluid w-100" src="../../assets/images/autor-photo.jpg"
                                     alt="First slide">
                             </div>
-                            <div class="col-12 col-md-4 ml-md-3 text-left">
+                            <div class="col-12 col-md-4 ml-md-3 text-left mt-3 mt-md-0">
                                 <div class=" d-flex flex-row flex-md-column">
                                     <div class="format-icon mr-2 mb-2">
                                         <img src="../../assets/images/talleres-icon.svg" alt="" />
@@ -63,7 +63,7 @@
                                 <img class="d-block img-fluid w-100" src="../../assets/images/mineria.jpg"
                                     alt="First slide">
                             </div>
-                            <div class="col-12 col-md-4 ml-md-3 text-left">
+                            <div class="col-12 col-md-4 ml-md-3 text-left mt-3 mt-md-0">
                                 <div class=" d-flex flex-row flex-md-column">
                                     <div class="format-icon mr-2 mb-2">
                                         <img src="../../assets/images/talleres-icon.svg" alt="" />
@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-end mt-3">
+                <div class="d-flex justify-content-center justify-content-md-end mt-3">
                     <ol class="carousel-indicators d-flex align-items-center mx-3 my-0">
                         <li data-target="#fotogaleria2" data-slide-to="0"
                             class="active d-flex justify-content-center align-items-center">

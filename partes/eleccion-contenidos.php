@@ -1,5 +1,5 @@
-<div class="container my-5">
-    <div class="ta-context blue-border mx-5">
+<div class="container my-3 my-md-5">
+    <div class="ta-context blue-border mx-2 mx-md-5">
         <div class="eleccion-contenido">
             <div id="searchBarMenu" class="collapse show" aria-labelledby="searchBarMenu">
                 <div class="px-3 pt-3 pb-4">

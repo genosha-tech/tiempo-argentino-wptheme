@@ -1,4 +1,4 @@
-<div class="m-5">
+<div class="m-3 m-md-5">
     <div class="ta-context blue-border newsletter newsletter-especial">
         <div class="py-4">
             <div class="container d-flex flex-column flex-md-row align-items-end text-center text-md-left">

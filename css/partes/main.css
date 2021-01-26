@@ -369,6 +369,30 @@ a {
 }
 
 .ta-context {
+  /* &.dark-blue-bg {
+    background-color: var(--ta-celeste);
+
+    .article-preview {
+      .content {
+        .article-info-container {
+          .format,
+          .author {
+            p {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+
+    .btns-container {
+      .ver-mas {
+        button {
+          color: white;
+        }
+      }
+    }
+  } */
   /* &.espectaculos-bg {
     background-color: var(--ta-espectaculos-bg);
     .section-title {
@@ -386,16 +410,6 @@ a {
       }
     }
   } */
-}
-.ta-context.dark-blue-bg {
-  background-color: var(--ta-celeste);
-}
-.ta-context.dark-blue-bg .article-preview .content .article-info-container .format p,
-.ta-context.dark-blue-bg .article-preview .content .article-info-container .author p {
-  color: white;
-}
-.ta-context.dark-blue-bg .btns-container .ver-mas button {
-  color: white;
 }
 .ta-context.dark-blue .context-color .article-preview .content p {
   color: white !important;
@@ -487,6 +501,7 @@ a {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 400;
+  line-height: 22.46px;
 }
 .ta-context.talleres-especial .destacado p span {
   font-family: "Caladea";

@@ -9,7 +9,7 @@
                     <h4>FOTOGALERÍA</h4>
                 </div>
             </div>
-            <div class="container d-md-flex my-2 my-md-4">
+            <div class="container d-md-flex my-2 my-md-4 p-0">
                 <div id="carousel" class="col-12 col-md-8 fotogaleria carousel slide" data-ride="carousel"
                     data-interval="false">
 

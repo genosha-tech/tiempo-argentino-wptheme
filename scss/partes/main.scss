@@ -427,7 +427,7 @@ a {
 }
 
 .ta-context {
-  &.dark-blue-bg {
+  /* &.dark-blue-bg {
     background-color: var(--ta-celeste);
 
     .article-preview {
@@ -450,7 +450,7 @@ a {
         }
       }
     }
-  }
+  } */
 
   &.dark-blue {
     .context-color {
@@ -651,6 +651,7 @@ a {
       p {
         font-size: 20px;
         @include caladea-400;
+        line-height: 22.46px;
         span {
           @include caladea-700;
         }

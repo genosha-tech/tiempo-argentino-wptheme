@@ -19,7 +19,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="content mt-2 mt-lg-3 col-12">
+                    <div class="content mt-3 col-12">
                         <div class=" d-flex flex-row">
                             <div class="format-icon mr-2">
                                 <img src="../../assets/images/talleres-icon.svg" alt="" />

@@ -1,4 +1,4 @@
-<div class="container mt-3">
+<div class="mt-3">
     <div class="container-with-header ta-context dark-blue">
         <div class="context-color context-bg py-3">
             <div class="container">

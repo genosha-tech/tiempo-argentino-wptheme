@@ -21,34 +21,40 @@
 </head>
 
 <body>
-    <div class="container ta-context portada">
+    <div class="ta-context portada">
         <?php include_once('../../partes/header.php');  ?>
-        <?php include_once('../../partes/banner-nuevo-tiempo.php');  ?>
-        <?php include('../../partes/eleccion-contenidos.php');  ?>
-        <?php include_once('../../partes/misc.php');  ?>
-        <?php include_once('../../partes/simple-x7.php');  ?>
-        <?php include_once('../../partes/miscelanea-categoria.php');  ?>
-        <?php include_once('../../partes/newsletter-especial.php');  ?>
-        <?php include_once('../../partes/miscelanea-categoria2.php');  ?>
-        <?php include_once('../../partes/fotogaleria.php');  ?>
-        <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
+        <div class="container p-0">
+            <?php include_once('../../partes/banner-nuevo-tiempo.php');  ?>
+            <?php include('../../partes/eleccion-contenidos.php');  ?>
+            <?php include_once('../../partes/misc.php');  ?>
+            <?php include_once('../../partes/simple-x7.php');  ?>
+            <?php include_once('../../partes/miscelanea-categoria.php');  ?>
+            <?php include_once('../../partes/newsletter-especial.php');  ?>
+            <?php include_once('../../partes/miscelanea-categoria2.php');  ?>
+            <?php include_once('../../partes/fotogaleria.php');  ?>
+            <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
+        </div>
         <?php include_once('../../partes/audiovisual-especial.php');  ?>
-        <?php include_once('../../partes/simple-x6.php');  ?>
+        <div class="container p-0">
+            <?php include_once('../../partes/simple-x6.php');  ?>
+        </div>
         <?php include_once('../../partes/opinion.php');  ?>
         <?php include_once('../../partes/podcasts.php');  ?>
-        <?php include_once('../../partes/fotogaleria2.php');  ?>
-        <?php include_once('../../partes/tiempo-extra.php');  ?>
+        <div class="container p-0">
+            <?php include_once('../../partes/fotogaleria2.php');  ?>
+            <?php include_once('../../partes/tiempo-extra.php');  ?>
+        </div>
         <?php include_once('../../partes/cultura.php');  ?>
         <?php include_once('../../partes/deportes.php');  ?>
         <?php include_once('../../partes/espectaculos.php');  ?>
-        <?php include_once('../../partes/historieta.php');  ?>
-        <?php include('../../partes/contratapa.php');  ?>
-        <?php include('../../partes/talleres.php');  ?>
-        <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
-        <?php include_once('../../partes/footer.php');  ?>
+        <div class="container p-0">
+            <?php include_once('../../partes/historieta.php');  ?>
+            <?php include('../../partes/contratapa.php');  ?>
+            <?php include('../../partes/talleres.php');  ?>
+            <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
+            <?php include_once('../../partes/footer.php');  ?>
+        </div>
     </div>
-    </div>
-
 </body>
 
 </html>
