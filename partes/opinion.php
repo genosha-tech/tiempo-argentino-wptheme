@@ -1,4 +1,5 @@
-<div class="container-with-header py-3">
+<div class="container-with-header light-blue-bg py-3">
+
     <div class="container">
         <div class="section-title">
             <h4>OPINIÓN</h4>

@@ -131,17 +131,6 @@
   font-style: normal;
   font-weight: 700;
 }
-.article-preview.destacado {
-  /* .content {
-    .description {
-      p {
-        font-size: 15px;
-        letter-spacing: -0.2px;
-        line-height: 19.85px;
-      }
-    }
-  } */
-}
 .article-preview.destacado .img-container .img-wrapper {
   height: 200px;
   width: 100%;
@@ -208,6 +197,11 @@
   .article-preview.destacado-md .img-container .img-wrapper {
     height: 200px;
     width: 100%;
+  }
+  .article-preview.destacado-md .content .title p {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 22.46px;
   }
 }
 @media (min-width: 992px) {

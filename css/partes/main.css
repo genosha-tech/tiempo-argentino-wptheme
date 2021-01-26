@@ -397,18 +397,27 @@ a {
 .ta-context.dark-blue-bg .btns-container .ver-mas button {
   color: white;
 }
-.ta-context.dark-bg {
-  background-color: var(--ta-negro-texto);
+.ta-context.dark-blue .context-color .article-preview .content p {
+  color: white !important;
 }
-.ta-context.dark-bg .section-title h4 {
+.ta-context.dark-blue .context-color .article-preview.autor .img-container .img-wrapper {
+  border-color: var(--ta-celeste);
+}
+.ta-context.dark-blue .context-color .article-preview.autor .content .title p.nota-title {
   color: var(--ta-celeste);
 }
-.ta-context.dark-bg .title p,
-.ta-context.dark-bg .description p {
-  color: white;
+.ta-context.dark-blue .context-color .section-title h4,
+.ta-context.dark-blue .context-color .category-title h4 {
+  color: var(--ta-celeste);
 }
-.ta-context.dark-bg .article-info-container p {
-  color: var(--ta-gris-subtexto);
+.ta-context.dark-blue .context-color .article-border {
+  border-color: var(--ta-celeste);
+}
+.ta-context.dark-blue .context-bg {
+  background-color: var(--ta-negro-texto);
+}
+.ta-context.deportes .context-color .article-preview.autor .img-container .img-wrapper {
+  border-color: var(--ta-deportes);
 }
 .ta-context.deportes .context-color .article-preview.autor .content .title p.nota-title {
   color: var(--ta-deportes);
@@ -423,6 +432,9 @@ a {
 .ta-context.deportes .context-bg {
   background-color: var(--ta-deportes-bg);
 }
+.ta-context.espectaculos .context-color .article-preview.autor .img-container .img-wrapper {
+  border-color: var(--ta-espectaculos);
+}
 .ta-context.espectaculos .context-color .article-preview.autor .content .title p.nota-title {
   color: var(--ta-espectaculos);
 }
@@ -435,6 +447,9 @@ a {
 }
 .ta-context.espectaculos .context-bg {
   background-color: var(--ta-espectaculos-bg);
+}
+.ta-context.cultura .context-color .article-preview.autor .img-container .img-wrapper {
+  border-color: var(--ta-cultura);
 }
 .ta-context.cultura .context-color .article-preview.autor .content .title p.nota-title {
   color: var(--ta-cultura);

@@ -7,9 +7,20 @@
       @include caladea-400;
       font-size: 15px;
       margin: 0;
+      color: white;
 
       &.episode-number {
         @include caladea-700;
+      }
+    }
+
+    .article-info-container {
+      .author {
+        p {
+          @include baskerville-italic;
+          font-size: 12px;
+          color: var(--ta-gris-subtexto);
+        }
       }
     }
   }

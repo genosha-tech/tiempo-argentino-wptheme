@@ -452,26 +452,47 @@ a {
     }
   }
 
-  &.dark-bg {
-    background-color: var(--ta-negro-texto);
+  &.dark-blue {
+    .context-color {
+      .article-preview {
+        .content {
+          p {
+            color: white !important;
+          }
+        }
 
-    .section-title {
-      h4 {
-        color: var(--ta-celeste);
+        &.autor {
+          .img-container {
+            .img-wrapper {
+              border-color: var(--ta-celeste);
+            }
+          }
+          .content {
+            .title {
+              p {
+                &.nota-title {
+                  color: var(--ta-celeste);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .section-title,
+      .category-title {
+        h4 {
+          color: var(--ta-celeste);
+        }
+      }
+
+      .article-border {
+        border-color: var(--ta-celeste);
       }
     }
 
-    .title,
-    .description {
-      p {
-        color: white;
-      }
-    }
-
-    .article-info-container {
-      p {
-        color: var(--ta-gris-subtexto);
-      }
+    .context-bg {
+      background-color: var(--ta-negro-texto);
     }
   }
 
@@ -479,6 +500,11 @@ a {
     .context-color {
       .article-preview {
         &.autor {
+          .img-container {
+            .img-wrapper {
+              border-color: var(--ta-deportes);
+            }
+          }
           .content {
             .title {
               p {
@@ -512,6 +538,11 @@ a {
     .context-color {
       .article-preview {
         &.autor {
+          .img-container {
+            .img-wrapper {
+              border-color: var(--ta-espectaculos);
+            }
+          }
           .content {
             .title {
               p {
@@ -545,6 +576,11 @@ a {
     .context-color {
       .article-preview {
         &.autor {
+          .img-container {
+            .img-wrapper {
+              border-color: var(--ta-cultura);
+            }
+          }
           .content {
             .title {
               p {

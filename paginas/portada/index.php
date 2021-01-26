@@ -21,95 +21,30 @@
 </head>
 
 <body>
-    <div class="ta-context portada">
+    <div class="container ta-context portada">
         <?php include_once('../../partes/header.php');  ?>
         <?php include_once('../../partes/banner-nuevo-tiempo.php');  ?>
-        <div class="container">
-            <div class="ta-context blue-border mt-3">
-                <?php include('../../partes/eleccion-contenidos.php');  ?>
-            </div>
-
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/misc.php');  ?>
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/simple-x7.php');  ?>
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/miscelanea-categoria.php');  ?>
-        </div>
-        <div class="container mt-3">
-            <div class="ta-context blue-border newsletter-especial">
-                <?php include_once('../../partes/newsletter-especial.php');  ?>
-            </div>
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/miscelanea-categoria2.php');  ?>
-        </div>
-        <div class="container mt-5">
-            <div class="line-height-0">
-                <div class="separator m-0"></div>
-            </div>
-            <div class="ta-context blue-border">
-                <?php include_once('../../partes/fotogaleria.php');  ?>
-            </div>
-        </div>
-        <div class="container-fluid container-lg p-0 ">
-            <div class="ta-context yellow-border  mt-3">
-                <?php include_once('../../partes/seamos-socios-fullwidth.php');  ?>
-            </div>
-        </div>
-        <div class="ta-context dark-bg mt-3">
-            <?php include_once('../../partes/audiovisual-especial.php');  ?>
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/simple-x6.php');  ?>
-        </div>
-        <div class="ta-context light-blue-bg mt-3">
-            <?php include_once('../../partes/opinion.php');  ?>
-        </div>
-
-
-        <div class="ta-context dark-bg">
-            <?php include_once('../../partes/podcasts.php');  ?>
-        </div>
-        <div class="container mt-3">
-            <div class="line-height-0">
-                <div class="separator m-0"></div>
-            </div>
-            <div class="ta-context blue-border">
-                <?php include_once('../../partes/fotogaleria2.php');  ?>
-            </div>
-        </div>
-        <div class="container p-0">
-            <?php include_once('../../partes/tiempo-extra.php');  ?>
-        </div>
+        <?php include('../../partes/eleccion-contenidos.php');  ?>
+        <?php include_once('../../partes/misc.php');  ?>
+        <?php include_once('../../partes/simple-x7.php');  ?>
+        <?php include_once('../../partes/miscelanea-categoria.php');  ?>
+        <?php include_once('../../partes/newsletter-especial.php');  ?>
+        <?php include_once('../../partes/miscelanea-categoria2.php');  ?>
+        <?php include_once('../../partes/fotogaleria.php');  ?>
+        <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
+        <?php include_once('../../partes/audiovisual-especial.php');  ?>
+        <?php include_once('../../partes/simple-x6.php');  ?>
+        <?php include_once('../../partes/opinion.php');  ?>
+        <?php include_once('../../partes/podcasts.php');  ?>
+        <?php include_once('../../partes/fotogaleria2.php');  ?>
+        <?php include_once('../../partes/tiempo-extra.php');  ?>
         <?php include_once('../../partes/cultura.php');  ?>
         <?php include_once('../../partes/deportes.php');  ?>
         <?php include_once('../../partes/espectaculos.php');  ?>
         <?php include_once('../../partes/historieta.php');  ?>
-        <div class="container mt-3">
-            <div class="line-height-0">
-                <div class="separator m-0"></div>
-            </div>
-            <div class="ta-context blue-border">
-                <?php include('../../partes/contratapa.php');  ?>
-            </div>
-        </div>
-        <div class="container mt-3">
-            <div class="line-height-0">
-                <div class="separator m-0"></div>
-            </div>
-            <div class="ta-context blue-border talleres-especial">
-                <?php include('../../partes/talleres.php');  ?>
-            </div>
-        </div>
-        <div class="container-fluid container-lg p-0 ">
-            <div class="ta-context yellow-border  mt-3">
-                <?php include_once('../../partes/seamos-socios-fullwidth.php');  ?>
-            </div>
-        </div>
+        <?php include('../../partes/contratapa.php');  ?>
+        <?php include('../../partes/talleres.php');  ?>
+        <?php include('../../partes/seamos-socios-fullwidth.php');  ?>
         <?php include_once('../../partes/footer.php');  ?>
     </div>
     </div>
