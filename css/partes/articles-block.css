@@ -7,12 +7,18 @@
   --ta-socios: #ffbb0f;
   --ta-socios-fondos: #ffe7a9;
   --ta-espectaculos: #ce0d54;
+  --ta-espectaculos-bg: #f9f2f6;
   --ta-cultura: #48b1a7;
+  --ta-cultura-bg: #e0fbf9;
   --ta-deportes: #ee813c;
+  --ta-deportes-bg: #fff3ec;
 }
 
 .article-preview {
-  max-width: 258px;
+  max-width: 100%;
+}
+.article-preview > div {
+  flex: 0 1 auto;
 }
 .article-preview.horizontal {
   max-width: 100%;
@@ -39,16 +45,22 @@
 .article-preview.horizontal .content .author {
   max-width: 100%;
 }
-.article-preview .img-container img {
-  min-width: 100%;
-  height: auto;
+.article-preview .img-container {
+  width: 100%;
 }
-.article-preview .img-container .article-icons {
+.article-preview .img-container .img-wrapper {
+  min-height: 79px;
+  max-width: 100%;
+  background: url("../../assets/images/interest-img.png") center no-repeat;
+  background-size: cover;
+}
+.article-preview .img-container .icons-container .article-icons {
+  min-height: 33px;
   top: 50%;
   transform: translateY(-50%);
 }
-.article-preview .img-container .article-icons img {
-  max-width: 40px;
+.article-preview .img-container .icons-container .article-icons img {
+  max-width: 26px;
   height: auto;
   margin: 5px 0;
 }
@@ -57,6 +69,14 @@
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
+}
+.article-preview .content .title p {
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.5px;
+  letter-spacing: -0.2px;
+  font-size: 15px;
 }
 .article-preview .content .description p {
   font-family: "Red Hat Display";
@@ -111,6 +131,61 @@
   font-style: normal;
   font-weight: 700;
 }
+.article-preview.destacado {
+  /* .content {
+    .description {
+      p {
+        font-size: 15px;
+        letter-spacing: -0.2px;
+        line-height: 19.85px;
+      }
+    }
+  } */
+}
+.article-preview.destacado .img-container .img-wrapper {
+  height: 200px;
+  width: 100%;
+  background: url("../../assets/images/interest-img.png") center no-repeat;
+  background-size: cover;
+}
+.article-preview.destacado .img-container .article-icons img {
+  max-width: 40px;
+}
+.article-preview.destacado .content .title p {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  line-height: 22.46px;
+}
+.article-preview.autor .img-container .img-wrapper {
+  margin: 0 auto;
+  height: 79px;
+  width: 79px;
+  display: block;
+  background: #e6e7ed;
+  border: 2px solid var(--ta-celeste);
+  border-radius: 50%;
+  background: url("../../assets/images/autor-photo.jpg") top center no-repeat;
+}
+.article-preview.autor .img-container .article-icons {
+  top: 85%;
+}
+.article-preview.autor .content .title p.nota-title {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: -0.2px;
+  color: var(--ta-celeste);
+}
+.article-preview.autor .content .article-border {
+  margin: 10px 0;
+}
+.article-preview.autor .content .article-info-container .author {
+  max-width: 100%;
+}
+.article-preview.large-thumbnail .img-container .img-wrapper {
+  min-height: 172px;
+}
 
 .sub-blocks .ta-articles-block {
   overflow: scroll;
@@ -129,18 +204,81 @@
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .article-preview.destacado-md .img-container .img-wrapper {
+    height: 200px;
+    width: 100%;
+  }
+}
 @media (min-width: 992px) {
-  .article-preview.horizontal .img-container .img-wrapper img {
-    max-width: 100%;
+  .article-preview .img-container .img-wrapper {
+    min-height: 140px;
+  }
+  .article-preview.horizontal {
+    max-width: 211px;
+  }
+  .article-preview.horizontal .img-container .img-wrapper {
+    height: 142px;
+    width: 211px;
+  }
+  .article-preview.destacado .img-container .img-wrapper {
+    height: 300px;
+  }
+  .article-preview.destacado-md .img-container .img-wrapper {
+    height: 299px;
+    width: 100%;
+  }
+  .article-preview.large-thumbnail .img-container .img-wrapper {
+    height: 313px;
+  }
+  .article-preview.autor .img-container .img-wrapper {
+    min-height: 79px;
   }
 }
 @media (min-width: 1200px) {
-  .sub-blocks .ta-articles-block {
+  .ta-articles-block {
     overflow: hidden;
+  }
+  .ta-articles-block.contratapa .article-preview.destacado .img-container .img-wrapper {
+    min-height: 472px;
+  }
+
+  .column-x3 .article-preview {
+    /*  max-width: 258px; */
+  }
+  .column-x3 .article-preview .img-container .img-wrapper {
+    min-height: 254px;
   }
 
   .article-preview {
-    max-width: 258px;
+    /*  max-width: 258px; */
+  }
+  .article-preview .img-container .img-wrapper {
+    min-height: 170px;
+  }
+  .article-preview .content .title p {
+    font-size: 21px;
+    line-height: 24.15px;
+    letter-spacing: -0.1px;
+  }
+  .article-preview.destacado .img-container .img-wrapper, .article-preview.destacado-md .img-container .img-wrapper {
+    min-height: 360px;
+  }
+  .article-preview.destacado .content .title p, .article-preview.destacado-md .content .title p {
+    font-size: 30px;
+    line-height: 33.69px;
+  }
+  .article-preview.large-thumbnail .img-container .img-wrapper {
+    min-height: 381px;
+  }
+  .article-preview.autor .img-container .img-wrapper {
+    min-height: 157px;
+    width: 157px;
+  }
+  .article-preview.autor .content .title p.nota-title {
+    line-height: 29.76px;
+    font-size: 24px;
+    letter-spacing: -0.2px;
   }
   .article-preview.thumbnail {
     max-width: 258px;

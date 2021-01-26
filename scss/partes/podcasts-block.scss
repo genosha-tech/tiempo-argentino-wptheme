@@ -1,0 +1,35 @@
+@import "../variables";
+@import "../mixins";
+
+.podcasts-block {
+  .podcast-preview {
+    p {
+      @include caladea-400;
+      font-size: 15px;
+      margin: 0;
+
+      &.episode-number {
+        @include caladea-700;
+      }
+    }
+  }
+
+  .podcast-preview-container {
+    overflow-y: auto;
+    height: 254px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .podcasts-block {
+    .podcast-preview {
+      p {
+        font-size: 19px;
+      }
+    }
+
+    .podcast-preview-container {
+      height: auto;
+    }
+  }
+}
