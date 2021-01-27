@@ -27,7 +27,7 @@
 
   .podcast-preview-container {
     overflow-y: auto;
-    height: 254px;
+    max-height: 254px;
   }
 }
 
@@ -41,6 +41,7 @@
 
     .podcast-preview-container {
       height: auto;
+      max-height: max-content;
     }
   }
 }

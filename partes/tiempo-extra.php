@@ -17,6 +17,10 @@
                     </a>
                 </div>
                 <div class="content col-7 col-md-12">
+                    <div class="article-border"></div>
+                    <div class="category-title">
+                        <h4>tiempogrilla</h4>
+                    </div>
                     <div class="title">
                         <a href="">
                             <p>Título de la nota afin o “hermana” de la nota principal, según lo indique el
@@ -41,6 +45,10 @@
                     </a>
                 </div>
                 <div class="content col-7 col-md-12">
+                    <div class="article-border"></div>
+                    <div class="category-title">
+                        <h4>agenda virtual</h4>
+                    </div>
                     <div class="title">
                         <a href="">
                             <p>Título de la nota afin o “hermana” de la nota principal, según lo indique el
@@ -65,6 +73,10 @@
                     </a>
                 </div>
                 <div class="content col-7 col-md-12">
+                    <div class="article-border"></div>
+                    <div class="category-title">
+                        <h4>receta de la semana</h4>
+                    </div>
                     <div class="title">
                         <a href="">
                             <p>Título de la nota afin o “hermana” de la nota principal, según lo indique el

@@ -440,6 +440,9 @@ a {
 .ta-context.deportes .context-color .category-title h4 {
   color: var(--ta-deportes);
 }
+.ta-context.deportes .context-color .separator {
+  background-color: var(--ta-deportes);
+}
 .ta-context.deportes .context-color .article-border {
   border-color: var(--ta-deportes);
 }
@@ -456,6 +459,9 @@ a {
 .ta-context.espectaculos .context-color .category-title h4 {
   color: var(--ta-espectaculos);
 }
+.ta-context.espectaculos .context-color .separator {
+  background-color: var(--ta-espectaculos);
+}
 .ta-context.espectaculos .context-color .article-border {
   border-color: var(--ta-espectaculos);
 }
@@ -471,6 +477,9 @@ a {
 .ta-context.cultura .context-color .section-title h4,
 .ta-context.cultura .context-color .category-title h4 {
   color: var(--ta-cultura);
+}
+.ta-context.cultura .context-color .separator {
+  background-color: var(--ta-cultura);
 }
 .ta-context.cultura .context-color .article-border {
   border-color: var(--ta-cultura);

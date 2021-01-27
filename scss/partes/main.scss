@@ -524,6 +524,10 @@ a {
         }
       }
 
+      .separator {
+        background-color: var(--ta-deportes);
+      }
+
       .article-border {
         border-color: var(--ta-deportes);
       }
@@ -562,6 +566,10 @@ a {
         }
       }
 
+      .separator {
+        background-color: var(--ta-espectaculos);
+      }
+
       .article-border {
         border-color: var(--ta-espectaculos);
       }
@@ -598,6 +606,10 @@ a {
         h4 {
           color: var(--ta-cultura);
         }
+      }
+
+      .separator {
+        background-color: var(--ta-cultura);
       }
 
       .article-border {

@@ -36,7 +36,7 @@
 }
 .podcasts-block .podcast-preview-container {
   overflow-y: auto;
-  height: 254px;
+  max-height: 254px;
 }
 
 @media (min-width: 1200px) {
@@ -45,6 +45,7 @@
   }
   .podcasts-block .podcast-preview-container {
     height: auto;
+    max-height: max-content;
   }
 }
 
