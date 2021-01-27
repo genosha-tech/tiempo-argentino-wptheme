@@ -26,6 +26,7 @@
         <div class="container p-0">
             <?php include_once('../../partes/banner-nuevo-tiempo.php');  ?>
             <?php include('../../partes/eleccion-contenidos.php');  ?>
+            <?php include_once('../../partes/art-destacado-portada.php');  ?>
             <?php include_once('../../partes/misc.php');  ?>
             <?php include_once('../../partes/simple-x7.php');  ?>
             <?php include_once('../../partes/miscelanea-categoria.php');  ?>
