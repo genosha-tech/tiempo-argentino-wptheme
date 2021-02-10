@@ -650,6 +650,12 @@ a {
     }
   }
 
+  &.gray-border {
+    .subs-container {
+      border: 1px solid var(--ta-gris-subtexto);
+    }
+  }
+
   &.talleres-especial {
     p {
       font-size: 15px;
@@ -725,6 +731,12 @@ a {
           }
         }
       }
+    }
+  }
+
+  &.asociate {
+    .separator {
+      background-color: var(--ta-socios);
     }
   }
 }
