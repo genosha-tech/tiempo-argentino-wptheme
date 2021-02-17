@@ -4,12 +4,26 @@
 .subs-opt {
   .title {
     h4 {
-      @include baskerville-italic;
-      font-size: 20px;
-      line-height: 24.8px;
-      letter-spacing: -0.2px;
+      @include red-hat-900;
+      font-size: 17px;
+      letter-spacing: 0.3px;
+
+      &.italic {
+        @include baskerville-italic;
+        font-size: 20px;
+        line-height: 24.8px;
+        letter-spacing: -0.2px;
+      }
+
+      &.pack-name {
+        @include caladea-700;
+        font-size: 27px;
+        letter-spacing: -1px;
+        margin: 0;
+      }
     }
   }
+
   .opt-list {
     .opt {
       border: 1px solid var(--ta-socios);
@@ -143,6 +157,289 @@
           @include red-hat-400;
           margin-left: 10px;
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .your-amount-info-container {
+    h6 {
+      @include red-hat-400;
+      margin-left: 10px;
+      margin-bottom: 0;
+    }
+    .your-amount-block {
+      .input-container {
+        background-color: var(--ta-gris-fondos);
+        max-width: 75%;
+        margin: 0 auto;
+        p {
+          margin: 0;
+          @include caladea-700;
+          font-size: 27px;
+          letter-spacing: -1px;
+        }
+
+        input {
+          @include caladea-700;
+          background-color: transparent;
+          border: none;
+          border-bottom: 3px dashed var(--ta-negro-texto);
+          font-size: 27px;
+          max-width: 30%;
+
+          &[type="number"]::-webkit-inner-spin-button,
+          &[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .btns-container {
+        button {
+          @include button(var(--ta-socios-fondos), var(--ta-socios));
+          text-transform: uppercase;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+      }
+    }
+
+    .ayuda {
+      h6 {
+        @include red-hat-400;
+        a {
+          @include red-hat-500;
+          background-color: var(--ta-socios-fondos);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .chosen-amount-info-container {
+    .chosen-amount-block {
+      .amount-container {
+        background-color: var(--ta-socios-fondos);
+        width: max-content;
+        padding: 0 30px;
+        margin: 0 auto;
+        p {
+          margin: 0;
+          @include caladea-700;
+          font-size: 27px;
+          letter-spacing: -1px;
+        }
+      }
+
+      .checkbox-container {
+        .paper-checkbox {
+          position: absolute;
+          opacity: 0;
+
+          & + label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            @include red-hat-400;
+          }
+
+          & + label:before {
+            content: "";
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 25px;
+            height: 25px;
+            background: white;
+            border: 1px solid var(--ta-socios);
+          }
+
+          &:checked + label:after {
+            content: url("../../assets/images/checkmark.png");
+            position: absolute;
+            left: 5px;
+            top: -2px;
+          }
+        }
+      }
+    }
+
+    .sign-up-sign-in {
+      .create-account {
+        .title {
+          p {
+            @include red-hat-500;
+            font-size: 17px;
+            letter-spacing: -0.2px;
+          }
+        }
+
+        .btns-container {
+          button {
+            @include button(var(--ta-negro-texto), var(--ta-socios));
+          }
+        }
+      }
+
+      .login,
+      .login-w-socialmedia {
+        .title {
+          p {
+            @include red-hat-400;
+            letter-spacing: -0.2px;
+          }
+        }
+        .btns-container {
+          button {
+            @include button(var(--ta-negro-texto), var(--ta-gris-fondos));
+            padding-left: 35px;
+            padding-right: 35px;
+          }
+        }
+      }
+
+      .login-w-socialmedia {
+        .btns-container {
+          button {
+            @include button(var(--ta-negro-texto), transparent);
+            @include red-hat-900;
+            text-decoration: underline;
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 5px;
+            }
+
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .info {
+      h6 {
+        @include red-hat-400;
+      }
+    }
+  }
+
+  .address-info-container {
+    .address-block {
+      .title {
+        h6 {
+          @include red-hat-400;
+        }
+      }
+
+      .form-envio {
+        .input-container {
+          margin-top: 10px;
+          input {
+            border: 1.5px solid var(--ta-gris-subtexto);
+            border-radius: 20px;
+            width: 100%;
+            height: 40px;
+            padding: 0 15px;
+            &::placeholder {
+              @include red-hat-700;
+              color: var(--ta-gris-subtexto);
+            }
+          }
+        }
+        .btns-container {
+          button {
+            @include button(var(--ta-negro-texto), var(--ta-socios));
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .info,
+      .ayuda {
+        @include red-hat-400;
+      }
+    }
+  }
+}
+
+.popup-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 241, 242, 0.6);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+  .continuar-error-popup,
+  .delivery-zones-popup {
+    position: sticky;
+    top: 20%;
+    background: var(--ta-gris-fondos);
+
+    .popup {
+      padding: 15px;
+      @include red-hat-500;
+
+      .title {
+        h4 {
+          @include red-hat-900;
+          font-size: 17px;
+          letter-spacing: 0.3px;
+
+          &.italic {
+            @include baskerville-italic;
+            font-size: 20px;
+            letter-spacing: -0.2px;
+            margin: 0;
+          }
+        }
+      }
+
+      .aviso,
+      .continue,
+      .close-popup {
+        p {
+          @include red-hat-400;
+        }
+      }
+
+      .continue {
+        .btns-container {
+          button {
+            @include button(var(--ta-negro-texto), var(--ta-socios));
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .ayuda {
+        h6 {
+          @include red-hat-400;
+          a {
+            @include red-hat-500;
+            background-color: var(--ta-socios-fondos);
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .close-btn {
+        button {
+          @include button(var(--ta-negro-texto), var(--ta-gris-subtexto));
+          text-transform: uppercase;
+          padding: 5px 30px;
         }
       }
     }

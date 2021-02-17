@@ -1,5 +1,6 @@
 :root {
   --ta-celeste: #16a1dc;
+  --ta-gris-fondos: #ebf1f2;
   --ta-gris-imagen: #ebebeb;
   --ta-celeste-fondos: #ebf7fe;
   --ta-negro-texto: #252b2d;
@@ -15,12 +16,27 @@
 }
 
 .subs-opt .title h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+.subs-opt .title h4.italic {
   font-family: "Libre Baskerville";
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
   line-height: 24.8px;
   letter-spacing: -0.2px;
+}
+.subs-opt .title h4.pack-name {
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: -1px;
+  margin: 0;
 }
 .subs-opt .opt-list .opt {
   border: 1px solid var(--ta-socios);
@@ -168,6 +184,317 @@
   font-weight: 400;
   margin-left: 10px;
   margin-bottom: 0;
+}
+.subs-opt .your-amount-info-container h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.subs-opt .your-amount-info-container .your-amount-block .input-container {
+  background-color: var(--ta-gris-fondos);
+  max-width: 75%;
+  margin: 0 auto;
+}
+.subs-opt .your-amount-info-container .your-amount-block .input-container p {
+  margin: 0;
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+.subs-opt .your-amount-info-container .your-amount-block .input-container input {
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px dashed var(--ta-negro-texto);
+  font-size: 27px;
+  max-width: 30%;
+}
+.subs-opt .your-amount-info-container .your-amount-block .input-container input[type=number]::-webkit-inner-spin-button, .subs-opt .your-amount-info-container .your-amount-block .input-container input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.subs-opt .your-amount-info-container .your-amount-block .input-container input:focus {
+  outline: none;
+}
+.subs-opt .your-amount-info-container .your-amount-block .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-socios-fondos);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.subs-opt .your-amount-info-container .ayuda h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.subs-opt .your-amount-info-container .ayuda h6 a {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  background-color: var(--ta-socios-fondos);
+  text-decoration: underline;
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .amount-container {
+  background-color: var(--ta-socios-fondos);
+  width: max-content;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .amount-container p {
+  margin: 0;
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border: 1px solid var(--ta-socios);
+}
+.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox:checked + label:after {
+  content: url("../../assets/images/checkmark.png");
+  position: absolute;
+  left: 5px;
+  top: -2px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .create-account .title p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: -0.2px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .create-account .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login .title p,
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .title p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login .btns-container button,
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-gris-fondos);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button img {
+  margin-right: 5px;
+}
+.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button p {
+  margin: 0;
+}
+.subs-opt .chosen-amount-info-container .info h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.subs-opt .address-info-container .address-block .title h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.subs-opt .address-info-container .address-block .form-envio .input-container {
+  margin-top: 10px;
+}
+.subs-opt .address-info-container .address-block .form-envio .input-container input {
+  border: 1.5px solid var(--ta-gris-subtexto);
+  border-radius: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+.subs-opt .address-info-container .address-block .form-envio .input-container input::placeholder {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--ta-gris-subtexto);
+}
+.subs-opt .address-info-container .address-block .form-envio .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+.subs-opt .address-info-container .address-block .info,
+.subs-opt .address-info-container .address-block .ayuda {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.popup-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(235, 241, 242, 0.6);
+  display: none;
+}
+.popup-container.active {
+  display: block;
+}
+.popup-container .continuar-error-popup,
+.popup-container .delivery-zones-popup {
+  position: sticky;
+  top: 20%;
+  background: var(--ta-gris-fondos);
+}
+.popup-container .continuar-error-popup .popup,
+.popup-container .delivery-zones-popup .popup {
+  padding: 15px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+}
+.popup-container .continuar-error-popup .popup .title h4,
+.popup-container .delivery-zones-popup .popup .title h4 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+.popup-container .continuar-error-popup .popup .title h4.italic,
+.popup-container .delivery-zones-popup .popup .title h4.italic {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  margin: 0;
+}
+.popup-container .continuar-error-popup .popup .aviso p,
+.popup-container .continuar-error-popup .popup .continue p,
+.popup-container .continuar-error-popup .popup .close-popup p,
+.popup-container .delivery-zones-popup .popup .aviso p,
+.popup-container .delivery-zones-popup .popup .continue p,
+.popup-container .delivery-zones-popup .popup .close-popup p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.popup-container .continuar-error-popup .popup .continue .btns-container button,
+.popup-container .delivery-zones-popup .popup .continue .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+}
+.popup-container .continuar-error-popup .popup .ayuda h6,
+.popup-container .delivery-zones-popup .popup .ayuda h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.popup-container .continuar-error-popup .popup .ayuda h6 a,
+.popup-container .delivery-zones-popup .popup .ayuda h6 a {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  background-color: var(--ta-socios-fondos);
+  text-decoration: underline;
+}
+.popup-container .continuar-error-popup .popup .close-btn button,
+.popup-container .delivery-zones-popup .popup .close-btn button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-gris-subtexto);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding: 5px 30px;
 }
 
 @media (min-width: 992px) {

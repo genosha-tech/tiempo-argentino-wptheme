@@ -11,7 +11,7 @@
                 <div class="py-2">
                     <div class="subs-opt mt-3">
                         <div class="title text-center">
-                            <h4>Nombre estas son las mejores opciones para asociarte</h4>
+                            <h4 class="italic">Nombre estas son las mejores opciones para asociarte</h4>
                         </div>
                         <div class="opt-list mt-3">
                             <div class="d-flex flex-column flex-lg-row justify-content-center">
@@ -220,6 +220,29 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-container" id="continuarErrorPopup">
+    <div class="continuar-error-popup">
+        <div class="popup">
+            <div class="container text-center">
+                <div class="close-cross text-right close-popup">
+                    <img src="../../assets/images/grey-close.svg" alt="">
+                </div>
+                <div class="aviso mt-2">
+                    <p>Debes <b>elegir un abono mensual</b> para continuar.</p>
+                </div>
+                <div class="ayuda mt-4">
+                    <h6>Si deseas obtener ayuda con el proceso de asociación, podés escribir un mail a <a
+                            href="mailto:suscripciones@tiempoargentino.com.ar">suscripciones@tiempoargentino.com.ar</a>
+                    </h6>
+                </div>
+                <div class="close-btn">
+                    <button class="close-popup">cerrar</button>
                 </div>
             </div>
         </div>

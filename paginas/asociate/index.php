@@ -23,6 +23,9 @@
 <body>
     <?php include_once('../../partes/header.php');  ?>
     <?php include_once('../../partes/asociate/paquetes.php');  ?>
+    <?php include_once('../../partes/asociate/otro-importe.php');  ?>
+    <?php include_once('../../partes/asociate/paquete-elegido.php');  ?>
+    <?php include_once('../../partes/asociate/domicilio-envio.php');  ?>
     <?php include_once('../../partes/footer.php');  ?>
     </div>
 
@@ -35,6 +38,19 @@
             $("#" + className).addClass('active');
             $(this).addClass('active');
         });
+    });
+
+    $('.continue-btn').bind('click', function() {
+        $('#continuarErrorPopup').addClass('active')
+    });
+    $('.close-popup').bind('click', function() {
+        $('#continuarErrorPopup').removeClass('active')
+    });
+    $('.login-btn').bind('click', function() {
+        $('#warningDeliveryZones').addClass('active')
+    });
+    $('.close-popup').bind('click', function() {
+        $('#warningDeliveryZones').removeClass('active')
     });
     </script>
 </body>
