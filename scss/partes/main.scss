@@ -677,7 +677,8 @@ a {
     }
   }
 
-  &.newsletter-especial {
+  &.newsletter-especial,
+  .newsletter-personalizar {
     .envelope-icon {
       display: block;
     }
@@ -693,6 +694,16 @@ a {
         &.send {
           display: block;
         }
+      }
+    }
+  }
+
+  &.newsletter-personalizar {
+    .newsletter-options {
+      button {
+        left: initial;
+        transform: none;
+        width: auto !important;
       }
     }
   }
@@ -998,8 +1009,31 @@ a {
 
 @media (min-width: 500px) and (max-width: 992px) {
   .ta-context {
-    &.newsletter-especial {
+    &.newsletter-especial,
+    .newsletter-personalizar {
       .newsletter {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .banner-nuevo-tiempo,
+  .eleccion-contenido {
+    .title {
+      flex: 1;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-nuevo-tiempo,
+  .eleccion-contenido {
+    .title {
+      flex: 1;
+      p {
         max-width: 100%;
       }
     }
