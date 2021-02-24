@@ -2,22 +2,22 @@
     <div class="line-height-0">
         <div class="separator m-0"></div>
     </div>
-    <div class="subs-container">
+    <div class="asociate-block-container">
         <div class="section-title p-2">
             <h4>asociate<span class="ml-2">Tu paquete</span></h4>
         </div>
         <div class="container">
             <div class="container-with-header">
                 <div class="py-2">
-                    <div class="subs-opt mt-3">
+                    <div class="subs-opt mt-3 mt-md-5">
                         <div class="title text-center">
                             <h4 class="italic">Elegiste el paquete</h4>
                             <h4 class="pack-name">Socio DIGITAL</h4>
                             <h4 class="italic">por un abono mensual de:</h4>
                         </div>
-                        <div class="chosen-amount-info-container">
+                        <div class="asociate-wrapper">
                             <div class="chosen-amount-block">
-                                <div class="amount-container mt-3">
+                                <div class="chosen-amount-container mt-3">
                                     <p>$ 1550</p>
                                 </div>
                                 <div class="checkbox-container text-center mt-3">
@@ -35,22 +35,24 @@
                                     </div>
                                 </div>
                                 <div class="login mt-4">
-                                    <div class="title">
+                                    <div>
                                         <p>¿Ya tenés cuenta?</p>
                                     </div>
                                     <div class="btns-container text-center">
-                                        <button class="login-btn">INGRESA</button>
+                                        <button class="login-btn gray-btn-black-text">INGRESA</button>
                                     </div>
                                 </div>
                                 <div class="login-w-socialmedia mt-4">
-                                    <div class="title">
+                                    <div>
                                         <p>Iniciá sesión con:</p>
                                     </div>
                                     <div class="btns-container d-flex justify-content-center text-center">
-                                        <button><img src="../../assets/images/twitter-black-icon.svg" alt="">
+                                        <button class="transparent-btn"><img
+                                                src="../../assets/images/twitter-black-icon.svg" alt="">
                                             <p>twitter</p>
                                         </button>
-                                        <button><img src="../../assets/images/facebook-black-icon.svg" alt="">
+                                        <button class="transparent-btn"><img
+                                                src="../../assets/images/facebook-black-icon.svg" alt="">
                                             <p>facebook</p>
                                         </button>
                                     </div>

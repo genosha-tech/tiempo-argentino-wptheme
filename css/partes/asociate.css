@@ -15,14 +15,17 @@
   --ta-deportes-bg: #fff3ec;
 }
 
-.subs-opt .title h4 {
+.asociate-block-container {
+  border: 1px solid var(--ta-gris-subtexto);
+}
+.asociate-block-container .title h4 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
   font-size: 17px;
   letter-spacing: 0.3px;
 }
-.subs-opt .title h4.italic {
+.asociate-block-container .title h4.italic {
   font-family: "Libre Baskerville";
   font-style: italic;
   font-weight: 400;
@@ -30,7 +33,7 @@
   line-height: 24.8px;
   letter-spacing: -0.2px;
 }
-.subs-opt .title h4.pack-name {
+.asociate-block-container .title h4.pack-name {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 700;
@@ -38,24 +41,24 @@
   letter-spacing: -1px;
   margin: 0;
 }
-.subs-opt .opt-list .opt {
+.asociate-block-container .subs-opt .opt-list .opt {
   border: 1px solid var(--ta-socios);
   margin-top: 85px;
 }
-.subs-opt .opt-list .opt .icon {
+.asociate-block-container .subs-opt .opt-list .opt .icon {
   margin-top: -85px;
   min-height: 92px;
 }
-.subs-opt .opt-list .opt .icon img {
+.asociate-block-container .subs-opt .opt-list .opt .icon img {
   background: white;
   padding: 0 10px;
 }
-.subs-opt .opt-list .opt.papel {
+.asociate-block-container .subs-opt .opt-list .opt.papel {
   margin-top: 20px;
   border: none;
   background-color: var(--ta-gris-imagen);
 }
-.subs-opt .opt-list .opt.papel .description h4 {
+.asociate-block-container .subs-opt .opt-list .opt.papel .description h4 {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 700;
@@ -63,22 +66,7 @@
   line-height: 22.46px;
   letter-spacing: -0.5px;
 }
-.subs-opt .opt-list .opt.papel .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.subs-opt .opt-list .description h4 {
+.asociate-block-container .subs-opt .opt-list .description h4 {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 700;
@@ -86,7 +74,7 @@
   line-height: 31.05px;
   letter-spacing: -1px;
 }
-.subs-opt .opt-list .description p {
+.asociate-block-container .subs-opt .opt-list .description p {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -94,11 +82,11 @@
   line-height: 19.85px;
   letter-spacing: -0.2px;
 }
-.subs-opt .opt-list .amounts .amount {
+.asociate-block-container .subs-opt .opt-list .amounts .amount {
   height: 100%;
   background-color: var(--ta-gris-imagen);
 }
-.subs-opt .opt-list .amounts .amount button {
+.asociate-block-container .subs-opt .opt-list .amounts .amount button {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
@@ -112,7 +100,7 @@
   width: 100%;
   height: 100%;
 }
-.subs-opt .opt-list .amounts .amount button p {
+.asociate-block-container .subs-opt .opt-list .amounts .amount button p {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 700;
@@ -122,39 +110,21 @@
   margin: 0;
   text-transform: uppercase;
 }
-.subs-opt .opt-list .amounts .amount button.active {
+.asociate-block-container .subs-opt .opt-list .amounts .amount button.active {
   outline: none;
   background-color: var(--ta-socios);
   position: relative;
   top: -3px;
   left: -3px;
 }
-.subs-opt .opt-list .amounts .amount.other button p {
+.asociate-block-container .subs-opt .opt-list .amounts .amount.other button p {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
   line-height: 19.85px;
 }
-.subs-opt .opt-list .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-socios-fondos);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.subs-opt .opt-list .btns-container button.active {
-  color: var(--ta-negro-texto);
-}
-.subs-opt .opt-list .opt-details button {
+.asociate-block-container .subs-opt .opt-list .opt-details button {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
@@ -166,38 +136,204 @@
   line-height: 20px;
   padding: 4px 10px;
 }
-.subs-opt .opt-list .opt-details button:focus {
+.asociate-block-container .subs-opt .opt-list .opt-details button:focus {
   outline: none;
 }
-.subs-opt .opt-list .opt-details button .dropdown-icon img {
+.asociate-block-container .subs-opt .opt-list .opt-details button .dropdown-icon img {
   transform: rotate(180deg);
 }
-.subs-opt .opt-list .opt-details button p {
+.asociate-block-container .subs-opt .opt-list .opt-details button p {
   margin: 0;
 }
-.subs-opt .opt-list .opt-details .card-body {
+.asociate-block-container .subs-opt .opt-list .opt-details .card-body {
   padding: 10px;
 }
-.subs-opt .opt-list .opt-details .card-body h6 {
+.asociate-block-container .subs-opt .opt-list .opt-details .card-body h6 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
   margin-left: 10px;
   margin-bottom: 0;
 }
-.subs-opt .your-amount-info-container h6 {
+.asociate-block-container .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.asociate-block-container .btns-container button:focus {
+  border: none;
+  outline: none;
+}
+.asociate-block-container .btns-container button.yellow-btn-white-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: white;
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.asociate-block-container .btns-container button.yellow-btn-yellow-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-socios-fondos);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.asociate-block-container .btns-container button.yellow-btn-yellow-text.active {
+  color: var(--ta-negro-texto);
+}
+.asociate-block-container .btns-container button.gray-btn-black-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-gris-fondos);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  min-width: 150px;
+}
+.asociate-block-container .btns-container button.transparent-btn {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+}
+.asociate-block-container .form-container .input-container {
+  margin-top: 15px;
+}
+.asociate-block-container .form-container .input-container input,
+.asociate-block-container .form-container .input-container select {
+  border-radius: 20px;
+  border: 1.5px solid var(--ta-gris-subtexto);
+  font-size: 13px;
+  height: 40px;
+  padding: 0 15px;
+  width: 100%;
+}
+.asociate-block-container .form-container .input-container input::placeholder,
+.asociate-block-container .form-container .input-container select::placeholder {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--ta-gris-subtexto);
+}
+.asociate-block-container .form-container .input-container input:focus,
+.asociate-block-container .form-container .input-container select:focus {
+  outline: none;
+}
+.asociate-block-container .form-container .input-container input:not(:placeholder-shown):valid {
+  background: url(../../assets/images/correct-input.svg);
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+.asociate-block-container .form-container .input-container input:not(:placeholder-shown):valid + label {
+  opacity: 0;
+}
+.asociate-block-container .form-container .input-container input:not(:placeholder-shown):invalid {
+  background: url(../../assets/images/wrong-input.svg);
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+.asociate-block-container .form-container .input-container input:not(:placeholder-shown):invalid + label {
+  opacity: 0;
+}
+.asociate-block-container .form-container .input-container select {
+  padding: 0 5px;
+  min-width: 70px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 700;
+  color: var(--ta-gris-subtexto);
+}
+.asociate-block-container .asociate-wrapper p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+.asociate-block-container .asociate-wrapper .title p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: -0.2px;
+}
+.asociate-block-container .asociate-wrapper .subtitle p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+.asociate-block-container .asociate-wrapper .aviso h6 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+.asociate-block-container .asociate-wrapper h6 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
   margin-left: 10px;
   margin-bottom: 0;
 }
-.subs-opt .your-amount-info-container .your-amount-block .input-container {
+.asociate-block-container .asociate-wrapper h6 a {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-weight: bold;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.asociate-block-container .asociate-wrapper h6 a.highlighted {
+  background-color: var(--ta-socios-fondos);
+  text-decoration: underline;
+}
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container {
   background-color: var(--ta-gris-fondos);
   max-width: 75%;
   margin: 0 auto;
 }
-.subs-opt .your-amount-info-container .your-amount-block .input-container p {
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container p {
   margin: 0;
   font-family: "Caladea";
   font-style: normal;
@@ -205,7 +341,7 @@
   font-size: 27px;
   letter-spacing: -1px;
 }
-.subs-opt .your-amount-info-container .your-amount-block .input-container input {
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container input {
   font-family: "Caladea";
   font-style: normal;
   font-weight: 700;
@@ -215,47 +351,20 @@
   font-size: 27px;
   max-width: 30%;
 }
-.subs-opt .your-amount-info-container .your-amount-block .input-container input[type=number]::-webkit-inner-spin-button, .subs-opt .your-amount-info-container .your-amount-block .input-container input[type=number]::-webkit-outer-spin-button {
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container input[type=number]::-webkit-inner-spin-button, .asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.subs-opt .your-amount-info-container .your-amount-block .input-container input:focus {
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container input:focus {
   outline: none;
 }
-.subs-opt .your-amount-info-container .your-amount-block .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-socios-fondos);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.subs-opt .your-amount-info-container .ayuda h6 {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-}
-.subs-opt .your-amount-info-container .ayuda h6 a {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 500;
-  background-color: var(--ta-socios-fondos);
-  text-decoration: underline;
-}
-.subs-opt .chosen-amount-info-container .chosen-amount-block .amount-container {
+.asociate-block-container .asociate-wrapper .chosen-amount-block .chosen-amount-container {
   background-color: var(--ta-socios-fondos);
   width: max-content;
   padding: 0 30px;
   margin: 0 auto;
 }
-.subs-opt .chosen-amount-info-container .chosen-amount-block .amount-container p {
+.asociate-block-container .asociate-wrapper .chosen-amount-block .chosen-amount-container p {
   margin: 0;
   font-family: "Caladea";
   font-style: normal;
@@ -263,11 +372,11 @@
   font-size: 27px;
   letter-spacing: -1px;
 }
-.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox {
+.asociate-block-container .asociate-wrapper .checkbox-container .paper-checkbox {
   position: absolute;
   opacity: 0;
 }
-.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox + label {
+.asociate-block-container .asociate-wrapper .checkbox-container .paper-checkbox + label {
   position: relative;
   cursor: pointer;
   padding: 0;
@@ -275,7 +384,7 @@
   font-style: normal;
   font-weight: 400;
 }
-.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox + label:before {
+.asociate-block-container .asociate-wrapper .checkbox-container .paper-checkbox + label:before {
   content: "";
   margin-right: 10px;
   display: inline-block;
@@ -285,121 +394,40 @@
   background: white;
   border: 1px solid var(--ta-socios);
 }
-.subs-opt .chosen-amount-info-container .chosen-amount-block .checkbox-container .paper-checkbox:checked + label:after {
+.asociate-block-container .asociate-wrapper .checkbox-container .paper-checkbox:checked + label:after {
   content: url("../../assets/images/checkmark.png");
   position: absolute;
   left: 5px;
   top: -2px;
 }
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .create-account .title p {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: -0.2px;
-}
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .create-account .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-}
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login .title p,
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .title p {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.2px;
-}
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login .btns-container button,
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-gris-fondos);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: transparent;
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
+.asociate-block-container .asociate-wrapper .login-w-socialmedia .btns-container button {
   text-decoration: underline;
   display: flex;
   align-items: center;
 }
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button img {
+.asociate-block-container .asociate-wrapper .login-w-socialmedia .btns-container button img {
   margin-right: 5px;
 }
-.subs-opt .chosen-amount-info-container .sign-up-sign-in .login-w-socialmedia .btns-container button p {
-  margin: 0;
-}
-.subs-opt .chosen-amount-info-container .info h6 {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-}
-.subs-opt .address-info-container .address-block .title h6 {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 400;
-}
-.subs-opt .address-info-container .address-block .form-envio .input-container {
-  margin-top: 10px;
-}
-.subs-opt .address-info-container .address-block .form-envio .input-container input {
-  border: 1.5px solid var(--ta-gris-subtexto);
-  border-radius: 20px;
-  width: 100%;
-  height: 40px;
-  padding: 0 15px;
-}
-.subs-opt .address-info-container .address-block .form-envio .input-container input::placeholder {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 700;
-  color: var(--ta-gris-subtexto);
-}
-.subs-opt .address-info-container .address-block .form-envio .btns-container button {
+.asociate-block-container .asociate-wrapper .login-w-socialmedia .btns-container button p {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  margin: 0;
 }
-.subs-opt .address-info-container .address-block .info,
-.subs-opt .address-info-container .address-block .ayuda {
+.asociate-block-container .asociate-wrapper .info h6 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
+}
+.asociate-block-container .asociate-wrapper .metodo-pago-block .btns-container button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.ayuda {
+  word-break: break-all;
 }
 
 .popup-container {
@@ -453,20 +481,6 @@
   font-style: normal;
   font-weight: 400;
 }
-.popup-container .continuar-error-popup .popup .continue .btns-container button,
-.popup-container .delivery-zones-popup .popup .continue .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-}
 .popup-container .continuar-error-popup .popup .ayuda h6,
 .popup-container .delivery-zones-popup .popup .ayuda h6 {
   font-family: "Red Hat Display";
@@ -481,8 +495,7 @@
   background-color: var(--ta-socios-fondos);
   text-decoration: underline;
 }
-.popup-container .continuar-error-popup .popup .close-btn button,
-.popup-container .delivery-zones-popup .popup .close-btn button {
+.popup-container .btns-container button {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 900;
@@ -498,51 +511,184 @@
 }
 
 @media (min-width: 992px) {
-  .subs-opt .title h4 {
+  .asociate-block-container {
+    min-height: 600px;
+  }
+  .asociate-block-container .title h4 {
+    font-size: 24px;
+  }
+  .asociate-block-container .title h4.italic {
     font-size: 26px;
-    line-height: 32.24px;
+    line-height: 32px;
   }
-  .subs-opt .opt-list .opt.papel .description h4 {
-    font-size: 30px;
-    line-height: 33.69px;
-    letter-spacing: -0.5px;
-  }
-  .subs-opt .opt-list .opt.papel .btns-container button {
-    font-size: 19px;
-    padding: 8px 20px;
-  }
-  .subs-opt .opt-list .description h4 {
+  .asociate-block-container .title h4.pack-name {
     font-size: 39px;
-    line-height: 44.85px;
+  }
+  .asociate-block-container .subs-opt .opt-list .description h4 {
+    font-size: 39px;
     letter-spacing: -0.5px;
   }
-  .subs-opt .opt-list .description p {
-    font-size: 19px;
-    line-height: 25px;
-  }
-  .subs-opt .opt-list .amounts .amount button {
-    min-height: 43px;
-    padding: 6px 10px;
-  }
-  .subs-opt .opt-list .amounts .amount button p {
-    font-size: 35px;
-    letter-spacing: -0.5px;
-  }
-  .subs-opt .opt-list .amounts .amount.other button p {
+  .asociate-block-container .subs-opt .opt-list .description p {
     font-size: 19px;
   }
-  .subs-opt .opt-list .btns-container button {
-    font-size: 19px;
-    padding: 8px 20px;
+  .asociate-block-container .subs-opt .opt-list .amounts .amount button p {
+    font-size: 39px;
   }
-  .subs-opt .opt-list .opt-details button p {
+  .asociate-block-container .subs-opt .opt-list .amounts .amount.other button p {
     font-size: 19px;
   }
-  .subs-opt .opt-list .opt-details .card-body div {
+  .asociate-block-container .subs-opt .opt-list .opt-details button p {
+    font-size: 19px;
+  }
+  .asociate-block-container .subs-opt .opt-list .opt-details .card-body div {
     margin-top: 5px;
   }
-  .subs-opt .opt-list .opt-details .card-body h6 {
+  .asociate-block-container .subs-opt .opt-list .opt-details .card-body h6 {
     font-size: 19px;
+  }
+  .asociate-block-container .subs-opt .opt-list .opt.papel .description h4 {
+    font-size: 30px;
+  }
+  .asociate-block-container .btns-container button {
+    font-size: 19px !important;
+  }
+  .asociate-block-container .asociate-wrapper p {
+    font-size: 19px;
+  }
+  .asociate-block-container .asociate-wrapper .title p {
+    font-size: 24px;
+  }
+  .asociate-block-container .asociate-wrapper .title h6 {
+    font-size: 24px;
+  }
+  .asociate-block-container .asociate-wrapper h6 {
+    font-size: 19px;
+  }
+  .asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container {
+    max-width: 300px;
+  }
+  .asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container p,
+.asociate-block-container .asociate-wrapper .your-amount-block .your-amount-input-container input {
+    font-size: 38px;
+  }
+  .asociate-block-container .asociate-wrapper .chosen-amount-block .chosen-amount-container p {
+    font-size: 39px;
+  }
+  .asociate-block-container .asociate-wrapper .metodo-pago-block .btns-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .asociate-block-container .asociate-wrapper .metodo-pago-block .btns-container button {
+    max-width: 30%;
+    margin: 5px auto;
+  }
+  .asociate-block-container .asociate-wrapper .checkbox-container .paper-checkbox + label {
+    font-size: 19px;
+  }
+  .asociate-block-container .asociate-wrapper .form-container {
+    max-width: 500px;
+    margin: auto;
+  }
+  .asociate-block-container .asociate-wrapper .form-container .input-container input,
+.asociate-block-container .asociate-wrapper .form-container .input-container select {
+    font-size: 19px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  .asociate-block-container .asociate-wrapper .form-container .input-container input:not(:placeholder-shown):valid {
+    background-size: 32px;
+    background-position: 99%;
+  }
+  .asociate-block-container .asociate-wrapper .form-container .input-container input:not(:placeholder-shown):invalid {
+    background-size: 32px;
+    background-position: 99%;
+  }
+  .asociate-block-container .asociate-wrapper .login-opt-container {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .asociate-block-container .asociate-wrapper .ayuda {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .btns-container button {
+    font-size: 19px;
+    padding: 8px 20px;
+  }
+
+  /* .subs-opt {
+    .opt-list {
+      .opt {
+        &.papel {
+          .description {
+            h4 {
+              font-size: 30px;
+              line-height: 33.69px;
+              letter-spacing: -0.5px;
+            }
+          }
+        }
+      }
+      .description {
+        h4 {
+          font-size: 39px;
+          line-height: 44.85px;
+          letter-spacing: -0.5px;
+        }
+
+        p {
+          font-size: 19px;
+          line-height: 25px;
+        }
+      }
+
+      .amounts {
+        .amount {
+          button {
+            min-height: 43px;
+            padding: 6px 10px;
+            p {
+              font-size: 35px;
+              letter-spacing: -0.5px;
+            }
+          }
+
+          &.other {
+            button {
+              p {
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+
+      .opt-details {
+        button {
+          p {
+            font-size: 19px;
+          }
+        }
+
+        .card-body {
+          div {
+            margin-top: 5px;
+          }
+
+          h6 {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  } */
+  .popup-container .continuar-error-popup,
+.popup-container .delivery-zones-popup {
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 30%;
+    margin: 0 auto;
   }
 }
 

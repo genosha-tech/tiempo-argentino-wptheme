@@ -1,15 +1,15 @@
-<div class="container ta-context asociate gray-border mt-2 my-lg-5">
+<div class="container ta-context asociate mt-2 my-lg-5">
     <div class="line-height-0">
         <div class="separator m-0"></div>
     </div>
-    <div class="subs-container">
+    <div class="asociate-block-container">
         <div class="section-title p-2">
             <h4>asociate<span class="ml-2">ELEGÍ TU PAQUETE</span></h4>
         </div>
         <div class="container">
             <div class="container-with-header">
                 <div class="py-2">
-                    <div class="subs-opt mt-3">
+                    <div class="subs-opt mt-3 mt-md-5">
                         <div class="title text-center">
                             <h4 class="italic">Nombre estas son las mejores opciones para asociarte</h4>
                         </div>
@@ -61,7 +61,7 @@
                                                         <div
                                                             class="d-flex justify-content-center mx-auto uppercase mt-3">
                                                             <button id="digitalAmount"
-                                                                class="continue-btn">continuar</button>
+                                                                class="continue-btn yellow-btn-yellow-text">continuar</button>
                                                         </div>
                                                     </div>
                                                     <div class="opt-details mt-3">
@@ -82,17 +82,18 @@
                                                                 <div class="d-flex align-items-center">
                                                                     <img src="../../assets/images/marker-vermas.svg"
                                                                         alt="">
-                                                                    <h6>Beneficios exclusivos todas las semanas</h6>
+                                                                    <h6>Diario Domingo Digital</h6>
                                                                 </div>
                                                                 <div class="d-flex align-items-center">
                                                                     <img src="../../assets/images/marker-vermas.svg"
                                                                         alt="">
-                                                                    <h6>Diario de cada domingo en versión digital</h6>
+                                                                    <h6>Beneficios /descuento</h6>
                                                                 </div>
                                                                 <div class="d-flex align-items-center">
                                                                     <img src="../../assets/images/marker-vermas.svg"
                                                                         alt="">
-                                                                    <h6>Adelantos a nuestros contenidos</h6>
+                                                                    <h6>Comentarios e interacciones directas con los
+                                                                        periodistas</h6>
                                                                 </div>
 
                                                             </div>
@@ -149,7 +150,7 @@
                                                         <div
                                                             class=" d-flex justify-content-center mx-auto uppercase mt-3">
                                                             <button id="digitalPaperAmount"
-                                                                class="continue-btn">continuar</button>
+                                                                class="continue-btn yellow-btn-yellow-text">continuar</button>
                                                         </div>
                                                     </div>
                                                     <div class="opt-details mt-3">
@@ -241,8 +242,8 @@
                             href="mailto:suscripciones@tiempoargentino.com.ar">suscripciones@tiempoargentino.com.ar</a>
                     </h6>
                 </div>
-                <div class="close-btn">
-                    <button class="close-popup">cerrar</button>
+                <div class="btns-container">
+                    <button class="close-popup darkgray-btn-black-text">cerrar</button>
                 </div>
             </div>
         </div>

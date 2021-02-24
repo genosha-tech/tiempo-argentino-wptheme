@@ -1,7 +1,8 @@
 @import "../variables";
 @import "../mixins";
 
-.subs-opt {
+.asociate-block-container {
+  border: 1px solid var(--ta-gris-subtexto);
   .title {
     h4 {
       @include red-hat-900;
@@ -24,152 +25,269 @@
     }
   }
 
-  .opt-list {
-    .opt {
-      border: 1px solid var(--ta-socios);
-      margin-top: 85px;
+  .subs-opt {
+    .opt-list {
+      .opt {
+        border: 1px solid var(--ta-socios);
+        margin-top: 85px;
 
-      .icon {
-        margin-top: -85px;
-        min-height: 92px;
-        img {
-          background: white;
-          padding: 0 10px;
-        }
-      }
-
-      &.papel {
-        margin-top: 20px;
-        border: none;
-        background-color: var(--ta-gris-imagen);
-
-        .description {
-          h4 {
-            @include caladea-700;
-            font-size: 20px;
-            line-height: 22.46px;
-            letter-spacing: -0.5px;
+        .icon {
+          margin-top: -85px;
+          min-height: 92px;
+          img {
+            background: white;
+            padding: 0 10px;
           }
         }
 
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), var(--ta-socios));
-            text-transform: uppercase;
-            padding-left: 40px;
-            padding-right: 40px;
-          }
-        }
-      }
-    }
+        &.papel {
+          margin-top: 20px;
+          border: none;
+          background-color: var(--ta-gris-imagen);
 
-    .description {
-      h4 {
-        @include caladea-700;
-        font-size: 27px;
-        line-height: 31.05px;
-        letter-spacing: -1px;
-      }
-
-      p {
-        @include red-hat-400;
-        font-size: 15px;
-        line-height: 19.85px;
-        letter-spacing: -0.2px;
-      }
-    }
-
-    .amounts {
-      .amount {
-        height: 100%;
-        background-color: var(--ta-gris-imagen);
-
-        button {
-          @include button(var(--ta-negro-texto), var(--ta-gris-imagen));
-          width: 100%;
-          height: 100%;
-
-          p {
-            @include caladea-700;
-            font-size: 27px;
-            line-height: 31px;
-            letter-spacing: -1px;
-            margin: 0;
-            text-transform: uppercase;
-          }
-
-          &.active {
-            outline: none;
-            background-color: var(--ta-socios);
-            position: relative;
-            top: -3px;
-            left: -3px;
-          }
-        }
-
-        &.other {
-          button {
-            p {
-              @include red-hat-900;
-              font-size: 15px;
-              line-height: 19.85px;
+          .description {
+            h4 {
+              @include caladea-700;
+              font-size: 20px;
+              line-height: 22.46px;
+              letter-spacing: -0.5px;
             }
           }
         }
       }
-    }
 
-    .btns-container {
-      button {
-        @include button(var(--ta-socios-fondos), var(--ta-socios));
-        text-transform: uppercase;
-        padding-left: 40px;
-        padding-right: 40px;
-
-        &.active {
-          color: var(--ta-negro-texto);
-        }
-      }
-    }
-
-    .opt-details {
-      button {
-        @include button(var(--ta-negro-texto), transparent);
-
-        &:focus {
-          outline: none;
-        }
-
-        .dropdown-icon {
-          img {
-            transform: rotate(180deg);
-          }
+      .description {
+        h4 {
+          @include caladea-700;
+          font-size: 27px;
+          line-height: 31.05px;
+          letter-spacing: -1px;
         }
 
         p {
-          margin: 0;
+          @include red-hat-400;
+          font-size: 15px;
+          line-height: 19.85px;
+          letter-spacing: -0.2px;
         }
       }
 
-      .card-body {
-        padding: 10px;
-        h6 {
-          @include red-hat-400;
-          margin-left: 10px;
-          margin-bottom: 0;
+      .amounts {
+        .amount {
+          height: 100%;
+          background-color: var(--ta-gris-imagen);
+
+          button {
+            @include button(var(--ta-negro-texto), var(--ta-gris-imagen));
+            width: 100%;
+            height: 100%;
+
+            p {
+              @include caladea-700;
+              font-size: 27px;
+              line-height: 31px;
+              letter-spacing: -1px;
+              margin: 0;
+              text-transform: uppercase;
+            }
+
+            &.active {
+              outline: none;
+              background-color: var(--ta-socios);
+              position: relative;
+              top: -3px;
+              left: -3px;
+            }
+          }
+
+          &.other {
+            button {
+              p {
+                @include red-hat-900;
+                font-size: 15px;
+                line-height: 19.85px;
+              }
+            }
+          }
+        }
+      }
+
+      .opt-details {
+        button {
+          @include button(var(--ta-negro-texto), transparent);
+
+          &:focus {
+            outline: none;
+          }
+
+          .dropdown-icon {
+            img {
+              transform: rotate(180deg);
+            }
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .card-body {
+          padding: 10px;
+          h6 {
+            @include red-hat-400;
+            margin-left: 10px;
+            margin-bottom: 0;
+          }
         }
       }
     }
   }
 
-  .your-amount-info-container {
+  .btns-container {
+    button {
+      @include button(var(--ta-negro-texto), var(--ta-socios));
+      text-transform: uppercase;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      &.yellow-btn-white-text {
+        @include button(white, var(--ta-socios));
+        text-transform: uppercase;
+        padding-left: 35px;
+        padding-right: 35px;
+      }
+
+      &.yellow-btn-yellow-text {
+        @include button(var(--ta-socios-fondos), var(--ta-socios));
+        text-transform: uppercase;
+        padding-left: 35px;
+        padding-right: 35px;
+
+        &.active {
+          color: var(--ta-negro-texto);
+        }
+      }
+
+      &.gray-btn-black-text {
+        @include button(var(--ta-negro-texto), var(--ta-gris-fondos));
+        min-width: 150px;
+      }
+
+      &.transparent-btn {
+        @include button(var(--ta-negro-texto), transparent);
+        @include red-hat-900;
+      }
+    }
+  }
+
+  .form-container {
+    .input-container {
+      margin-top: 15px;
+      input,
+      select {
+        border-radius: 20px;
+        border: 1.5px solid var(--ta-gris-subtexto);
+        font-size: 13px;
+        height: 40px;
+        padding: 0 15px;
+        width: 100%;
+        &::placeholder {
+          @include red-hat-700;
+          color: var(--ta-gris-subtexto);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      input {
+        &:not(:placeholder-shown) {
+          &:valid {
+            background: url(../../assets/images/correct-input.svg);
+            background-size: 26px;
+            background-repeat: no-repeat;
+            background-position: 97%;
+
+            & + label {
+              opacity: 0;
+            }
+          }
+
+          &:invalid {
+            background: url(../../assets/images/wrong-input.svg);
+            background-size: 26px;
+            background-repeat: no-repeat;
+            background-position: 97%;
+
+            & + label {
+              opacity: 0;
+            }
+          }
+        }
+      }
+
+      select {
+        padding: 0 5px;
+        min-width: 70px;
+        @include red-hat-700;
+        color: var(--ta-gris-subtexto);
+      }
+    }
+  }
+
+  .asociate-wrapper {
+    p {
+      @include red-hat-400;
+      letter-spacing: -0.2px;
+    }
+
+    .title {
+      p {
+        @include red-hat-500;
+        font-size: 17px;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    .subtitle {
+      p {
+        @include red-hat-500;
+        font-size: 17px;
+      }
+    }
+
+    .aviso {
+      h6 {
+        @include red-hat-500;
+        font-size: 17px;
+      }
+    }
+
     h6 {
       @include red-hat-400;
       margin-left: 10px;
       margin-bottom: 0;
+
+      a {
+        @include red-hat-500;
+        font-weight: bold;
+        word-wrap: break-word;
+        word-break: break-all;
+        &.highlighted {
+          background-color: var(--ta-socios-fondos);
+          text-decoration: underline;
+        }
+      }
     }
+
     .your-amount-block {
-      .input-container {
+      .your-amount-input-container {
         background-color: var(--ta-gris-fondos);
         max-width: 75%;
         margin: 0 auto;
@@ -199,32 +317,10 @@
           }
         }
       }
-
-      .btns-container {
-        button {
-          @include button(var(--ta-socios-fondos), var(--ta-socios));
-          text-transform: uppercase;
-          padding-left: 35px;
-          padding-right: 35px;
-        }
-      }
     }
 
-    .ayuda {
-      h6 {
-        @include red-hat-400;
-        a {
-          @include red-hat-500;
-          background-color: var(--ta-socios-fondos);
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-
-  .chosen-amount-info-container {
     .chosen-amount-block {
-      .amount-container {
+      .chosen-amount-container {
         background-color: var(--ta-socios-fondos);
         width: max-content;
         padding: 0 30px;
@@ -236,90 +332,55 @@
           letter-spacing: -1px;
         }
       }
+    }
 
-      .checkbox-container {
-        .paper-checkbox {
+    .checkbox-container {
+      .paper-checkbox {
+        position: absolute;
+        opacity: 0;
+
+        & + label {
+          position: relative;
+          cursor: pointer;
+          padding: 0;
+          @include red-hat-400;
+        }
+
+        & + label:before {
+          content: "";
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: text-top;
+          width: 25px;
+          height: 25px;
+          background: white;
+          border: 1px solid var(--ta-socios);
+        }
+
+        &:checked + label:after {
+          content: url("../../assets/images/checkmark.png");
           position: absolute;
-          opacity: 0;
-
-          & + label {
-            position: relative;
-            cursor: pointer;
-            padding: 0;
-            @include red-hat-400;
-          }
-
-          & + label:before {
-            content: "";
-            margin-right: 10px;
-            display: inline-block;
-            vertical-align: text-top;
-            width: 25px;
-            height: 25px;
-            background: white;
-            border: 1px solid var(--ta-socios);
-          }
-
-          &:checked + label:after {
-            content: url("../../assets/images/checkmark.png");
-            position: absolute;
-            left: 5px;
-            top: -2px;
-          }
+          left: 5px;
+          top: -2px;
         }
       }
     }
 
-    .sign-up-sign-in {
-      .create-account {
-        .title {
+    .login-w-socialmedia {
+      .btns-container {
+        button {
+          text-decoration: underline;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin-right: 5px;
+          }
+
           p {
-            @include red-hat-500;
-            font-size: 17px;
-            letter-spacing: -0.2px;
-          }
-        }
-
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), var(--ta-socios));
-          }
-        }
-      }
-
-      .login,
-      .login-w-socialmedia {
-        .title {
-          p {
-            @include red-hat-400;
-            letter-spacing: -0.2px;
-          }
-        }
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), var(--ta-gris-fondos));
-            padding-left: 35px;
-            padding-right: 35px;
-          }
-        }
-      }
-
-      .login-w-socialmedia {
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), transparent);
             @include red-hat-900;
-            text-decoration: underline;
-            display: flex;
-            align-items: center;
-
-            img {
-              margin-right: 5px;
-            }
-
-            p {
-              margin: 0;
-            }
+            text-transform: lowercase;
+            margin: 0;
           }
         }
       }
@@ -330,45 +391,21 @@
         @include red-hat-400;
       }
     }
-  }
 
-  .address-info-container {
-    .address-block {
-      .title {
-        h6 {
-          @include red-hat-400;
-        }
-      }
-
-      .form-envio {
-        .input-container {
+    .metodo-pago-block {
+      .btns-container {
+        button {
+          width: 100%;
+          padding: 5px;
           margin-top: 10px;
-          input {
-            border: 1.5px solid var(--ta-gris-subtexto);
-            border-radius: 20px;
-            width: 100%;
-            height: 40px;
-            padding: 0 15px;
-            &::placeholder {
-              @include red-hat-700;
-              color: var(--ta-gris-subtexto);
-            }
-          }
         }
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), var(--ta-socios));
-            text-transform: uppercase;
-          }
-        }
-      }
-
-      .info,
-      .ayuda {
-        @include red-hat-400;
       }
     }
   }
+}
+
+.ayuda {
+  word-break: break-all;
 }
 
 .popup-container {
@@ -415,15 +452,6 @@
         }
       }
 
-      .continue {
-        .btns-container {
-          button {
-            @include button(var(--ta-negro-texto), var(--ta-socios));
-            text-transform: uppercase;
-          }
-        }
-      }
-
       .ayuda {
         h6 {
           @include red-hat-400;
@@ -434,27 +462,202 @@
           }
         }
       }
+    }
+  }
 
-      .close-btn {
-        button {
-          @include button(var(--ta-negro-texto), var(--ta-gris-subtexto));
-          text-transform: uppercase;
-          padding: 5px 30px;
-        }
-      }
+  .btns-container {
+    button {
+      @include button(var(--ta-negro-texto), var(--ta-gris-subtexto));
+      text-transform: uppercase;
+      padding: 5px 30px;
     }
   }
 }
 
 @media (min-width: 992px) {
-  .subs-opt {
+  .asociate-block-container {
+    min-height: 600px;
+
     .title {
       h4 {
-        font-size: 26px;
-        line-height: 32.24px;
+        font-size: 24px;
+        &.italic {
+          font-size: 26px;
+          line-height: 32px;
+        }
+
+        &.pack-name {
+          font-size: 39px;
+        }
       }
     }
 
+    .subs-opt {
+      .opt-list {
+        .description {
+          h4 {
+            font-size: 39px;
+            letter-spacing: -0.5px;
+          }
+
+          p {
+            font-size: 19px;
+          }
+        }
+
+        .amounts {
+          .amount {
+            button {
+              p {
+                font-size: 39px;
+              }
+            }
+
+            &.other {
+              button {
+                p {
+                  font-size: 19px;
+                }
+              }
+            }
+          }
+        }
+
+        .opt-details {
+          button {
+            p {
+              font-size: 19px;
+            }
+          }
+
+          .card-body {
+            div {
+              margin-top: 5px;
+            }
+
+            h6 {
+              font-size: 19px;
+            }
+          }
+        }
+
+        .opt.papel {
+          .description {
+            h4 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    .btns-container {
+      button {
+        font-size: 19px !important;
+      }
+    }
+
+    .asociate-wrapper {
+      p {
+        font-size: 19px;
+      }
+      .title {
+        p {
+          font-size: 24px;
+        }
+
+        h6 {
+          font-size: 24px;
+        }
+      }
+      h6 {
+        font-size: 19px;
+      }
+
+      .your-amount-block {
+        .your-amount-input-container {
+          max-width: 300px;
+
+          p,
+          input {
+            font-size: 38px;
+          }
+        }
+      }
+
+      .chosen-amount-block {
+        .chosen-amount-container {
+          p {
+            font-size: 39px;
+          }
+        }
+      }
+
+      .metodo-pago-block {
+        .btns-container {
+          display: flex;
+          flex-direction: column;
+          button {
+            max-width: 30%;
+            margin: 5px auto;
+          }
+        }
+      }
+
+      .checkbox-container {
+        .paper-checkbox + label {
+          font-size: 19px;
+        }
+      }
+
+      .form-container {
+        max-width: 500px;
+        margin: auto;
+
+        .input-container {
+          input,
+          select {
+            font-size: 19px;
+            height: 50px;
+            border-radius: 30px;
+          }
+
+          input {
+            &:not(:placeholder-shown) {
+              &:valid {
+                background-size: 32px;
+                background-position: 99%;
+              }
+
+              &:invalid {
+                background-size: 32px;
+                background-position: 99%;
+              }
+            }
+          }
+        }
+      }
+
+      .login-opt-container {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+
+      .ayuda {
+        max-width: 75%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .btns-container {
+    button {
+      font-size: 19px;
+      padding: 8px 20px;
+    }
+  }
+
+  /* .subs-opt {
     .opt-list {
       .opt {
         &.papel {
@@ -463,13 +666,6 @@
               font-size: 30px;
               line-height: 33.69px;
               letter-spacing: -0.5px;
-            }
-          }
-
-          .btns-container {
-            button {
-              font-size: 19px;
-              padding: 8px 20px;
             }
           }
         }
@@ -508,13 +704,6 @@
         }
       }
 
-      .btns-container {
-        button {
-          font-size: 19px;
-          padding: 8px 20px;
-        }
-      }
-
       .opt-details {
         button {
           p {
@@ -532,6 +721,16 @@
           }
         }
       }
+    }
+  } */
+
+  .popup-container {
+    .continuar-error-popup,
+    .delivery-zones-popup {
+      top: 50%;
+      transform: translateY(-50%);
+      max-width: 30%;
+      margin: 0 auto;
     }
   }
 }

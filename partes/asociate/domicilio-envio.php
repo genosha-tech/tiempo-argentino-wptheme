@@ -2,20 +2,20 @@
     <div class="line-height-0">
         <div class="separator m-0"></div>
     </div>
-    <div class="subs-container">
+    <div class="asociate-block-container">
         <div class="section-title p-2">
             <h4>asociate<span class="ml-2">Tu paquete</span></h4>
         </div>
         <div class="container">
             <div class="container-with-header">
                 <div class="py-2">
-                    <div class="subs-opt mt-3">
-                        <div class="address-info-container">
+                    <div class="subs-opt mt-3 mt-md-5">
+                        <div class="asociate-wrapper">
                             <div class="address-block">
                                 <div class="title text-center mt-4">
                                     <h6>Por favor, indicamos un domicilio donde se te enviará el diario.</h6>
                                 </div>
-                                <div class="form-envio mt-4">
+                                <div class="form-container mt-4">
                                     <div class="input-container">
                                         <input type="text" placeholder="Provincia">
                                     </div>
@@ -26,10 +26,10 @@
                                         <input type="text" placeholder="Calle">
                                     </div>
                                     <div class="d-flex">
-                                        <div class="input-container">
+                                        <div class="input-container mr-3 w-100">
                                             <input type="text" placeholder="Numero">
                                         </div>
-                                        <div class="input-container">
+                                        <div class="input-container w-100">
                                             <input type="text" placeholder="CP">
                                         </div>
                                     </div>
@@ -44,7 +44,7 @@
 
                                 </div>
                                 <div class="ayuda text-center my-4">
-                                    <h6>Ante cualquier duda, podés escribirnos a <a
+                                    <h6>Ante cualquier duda, podés escribirnos a <a class="highlighted"
                                             href="mailto:pagos@tiempoar.com.ar">pagos@tiempoar.com.ar</a> o <b>llamarnos
                                             al <a href="tel:4342-5511">4342-5511</a>.</b>
                                     </h6>

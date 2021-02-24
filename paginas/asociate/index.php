@@ -26,8 +26,13 @@
     <?php include_once('../../partes/asociate/otro-importe.php');  ?>
     <?php include_once('../../partes/asociate/paquete-elegido.php');  ?>
     <?php include_once('../../partes/asociate/domicilio-envio.php');  ?>
+    <?php include_once('../../partes/asociate/sign-in-asociate.php');  ?>
+    <?php include_once('../../partes/asociate/registrarse.php');  ?>
+    <?php include_once('../../partes/asociate/metodo-pago.php');  ?>
+    <?php include_once('../../partes/asociate/mercado-pago.php');  ?>
+    <?php include_once('../../partes/asociate/transf-bancaria.php');  ?>
+    <?php include_once('../../partes/asociate/finalizar.php');  ?>
     <?php include_once('../../partes/footer.php');  ?>
-    </div>
 
     <script type="text/javascript">
     $(function() {
@@ -51,6 +56,18 @@
     });
     $('.close-popup').bind('click', function() {
         $('#warningDeliveryZones').removeClass('active')
+    });
+    $('#errorPagoBtn').bind('click', function() {
+        $('#errorPago').addClass('active')
+    });
+    $('.close-popup').bind('click', function() {
+        $('#errorPago').removeClass('active')
+    });
+    $('#pagoExitosoBtn').bind('click', function() {
+        $('#pagoExitoso').addClass('active')
+    });
+    $('.close-popup').bind('click', function() {
+        $('#pagoExitoso').removeClass('active')
     });
     </script>
 </body>
