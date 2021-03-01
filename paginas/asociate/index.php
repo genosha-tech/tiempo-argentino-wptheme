@@ -32,6 +32,11 @@
     <?php include_once('../../partes/asociate/mercado-pago.php');  ?>
     <?php include_once('../../partes/asociate/transf-bancaria.php');  ?>
     <?php include_once('../../partes/asociate/finalizar.php');  ?>
+    <?php include_once('../../partes/asociate/personalizar-localizacion.php');  ?>
+    <?php include_once('../../partes/asociate/personalizar-temas.php');  ?>
+    <?php include_once('../../partes/asociate/personalizar-periodismo.php');  ?>
+    <?php include_once('../../partes/asociate/personalizar-emociones.php');  ?>
+    <?php include_once('../../partes/asociate/personalizar-finalizar.php');  ?>
     <?php include_once('../../partes/footer.php');  ?>
 
     <script type="text/javascript">
@@ -68,6 +73,44 @@
     });
     $('.close-popup').bind('click', function() {
         $('#pagoExitoso').removeClass('active')
+    });
+
+    $(".tema button").each(function(i, elem) {
+        var chosenTopic = false
+        $(elem).bind('click', function() {
+            if (!chosenTopic) {
+                $(elem).addClass('active')
+            } else {
+                $(elem).removeClass('active')
+            }
+            chosenTopic = !chosenTopic
+        })
+    });
+
+    $(".articulo button").each(function(i, elem) {
+        var chosenArticle = false
+        $(elem).bind('click', function() {
+            if (!chosenArticle) {
+                $(elem).addClass('active')
+            } else {
+                $(elem).removeClass('active')
+            }
+            chosenArticle = !chosenArticle
+        })
+    });
+
+
+    $(".foto button").each(function(i, elem) {
+        var chosenPhoto = false
+        $(elem).bind('click', function() {
+            if (!chosenPhoto) {
+                $(elem).addClass('active')
+            } else {
+                $(elem).removeClass('active')
+            }
+            chosenPhoto = !chosenPhoto
+            $(`#${elem.id} .foto-checkbox`).prop('checked', chosenPhoto)
+        })
     });
     </script>
 </body>

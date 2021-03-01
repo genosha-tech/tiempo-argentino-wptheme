@@ -1,6 +1,50 @@
 @import "../variables";
 @import "../mixins";
 
+.ta-context {
+  &.asociate {
+    .btns-container {
+      button {
+        @include button(var(--ta-negro-texto), var(--ta-socios));
+        text-transform: uppercase;
+        min-width: 130px;
+
+        &:focus {
+          border: none;
+          outline: none;
+        }
+
+        &.yellow-btn-white-text {
+          @include button(white, var(--ta-socios));
+          text-transform: uppercase;
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+
+        &.yellow-btn-yellow-text {
+          @include button(var(--ta-socios-fondos), var(--ta-socios));
+          text-transform: uppercase;
+          padding-left: 35px;
+          padding-right: 35px;
+
+          &.active {
+            color: var(--ta-negro-texto);
+          }
+        }
+
+        &.gray-btn-black-text {
+          @include button(var(--ta-negro-texto), var(--ta-gris-fondos));
+        }
+
+        &.transparent-btn {
+          @include button(var(--ta-negro-texto), transparent);
+          @include red-hat-900;
+        }
+      }
+    }
+  }
+}
+
 .asociate-block-container {
   border: 1px solid var(--ta-gris-subtexto);
   .title {
@@ -143,50 +187,9 @@
     }
   }
 
-  .btns-container {
-    button {
-      @include button(var(--ta-negro-texto), var(--ta-socios));
-      text-transform: uppercase;
-      padding-left: 40px;
-      padding-right: 40px;
-
-      &:focus {
-        border: none;
-        outline: none;
-      }
-
-      &.yellow-btn-white-text {
-        @include button(white, var(--ta-socios));
-        text-transform: uppercase;
-        padding-left: 35px;
-        padding-right: 35px;
-      }
-
-      &.yellow-btn-yellow-text {
-        @include button(var(--ta-socios-fondos), var(--ta-socios));
-        text-transform: uppercase;
-        padding-left: 35px;
-        padding-right: 35px;
-
-        &.active {
-          color: var(--ta-negro-texto);
-        }
-      }
-
-      &.gray-btn-black-text {
-        @include button(var(--ta-negro-texto), var(--ta-gris-fondos));
-        min-width: 150px;
-      }
-
-      &.transparent-btn {
-        @include button(var(--ta-negro-texto), transparent);
-        @include red-hat-900;
-      }
-    }
-  }
-
   .form-container {
     .input-container {
+      position: relative;
       margin-top: 15px;
       input,
       select {
@@ -207,6 +210,10 @@
       }
 
       input {
+        &.with-icon {
+          padding-left: 40px;
+        }
+
         &:not(:placeholder-shown) {
           &:valid {
             background: url(../../assets/images/correct-input.svg);
@@ -232,6 +239,14 @@
         }
       }
 
+      .input-icon {
+        img {
+          position: absolute;
+          top: 7px;
+          left: 10px;
+        }
+      }
+
       select {
         padding: 0 5px;
         min-width: 70px;
@@ -241,7 +256,22 @@
     }
   }
 
+  .btns-container {
+    button {
+      padding-left: 40px;
+      padding-right: 40px;
+      width: inherit;
+      &.gray-btn-black-text {
+        min-width: 150px;
+      }
+    }
+  }
+
   .asociate-wrapper {
+    > .img-container {
+      margin: 0 auto;
+      max-width: 250px;
+    }
     p {
       @include red-hat-400;
       letter-spacing: -0.2px;
@@ -402,6 +432,180 @@
       }
     }
   }
+
+  .temas {
+    .tema {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 340px;
+      .bg-color {
+        background-color: var(--ta-gris-fondos);
+        button {
+          @include button(var(--ta-gris-subtexto), var(--ta-gris-fondos));
+          @include caladea-700;
+          font-size: 24px;
+          letter-spacing: -1px;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          width: 100%;
+
+          &.active {
+            background-color: var(--ta-socios-fondos);
+            color: var(--ta-negro-texto);
+            left: -5px;
+            position: relative;
+            top: -5px;
+          }
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .articulos {
+    .articulo {
+      button {
+        @include button(var(--ta-gris-subtexto), transparent);
+        padding: 0;
+        text-align: left;
+
+        .line-height-0 {
+          .separator {
+            background-color: var(--ta-gris-subtexto);
+          }
+        }
+
+        .articulo-content {
+          background-color: var(--ta-gris-fondos);
+          padding: 4px 10px;
+          .topic {
+            p {
+              @include red-hat-900;
+              font-size: 12px;
+              margin-bottom: 0;
+            }
+          }
+          .description {
+            p {
+              @include red-hat-400;
+              color: var(--ta-negro-texto);
+            }
+          }
+        }
+
+        &.active {
+          outline: none;
+          position: relative;
+          left: -5px;
+          top: -5px;
+
+          .line-height-0 {
+            .separator {
+              background-color: var(--ta-socios);
+            }
+          }
+
+          .articulo-content {
+            background-color: var(--ta-socios-fondos);
+            box-shadow: 5px 6px var(--ta-gris-fondos);
+
+            .topic {
+              p {
+                color: var(--ta-negro-texto);
+              }
+            }
+          }
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .fotos {
+    .foto {
+      padding: 5px 10px !important;
+      .foto-block-container {
+        max-width: 225px;
+        background-color: var(--ta-socios);
+      }
+
+      button {
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        color: var(--ta-negro-texto);
+
+        outline: none;
+        position: relative;
+
+        /* .checkbox-container {
+          .foto-checkbox {
+            bottom: 5px;
+            right: 5px;
+          }
+        } */
+
+        &.active {
+          background-color: var(--ta-socios-fondos);
+          left: -5px;
+          top: -5px;
+        }
+
+        .checkbox-container {
+          .foto-checkbox {
+            height: 25px;
+            width: 25px;
+            margin: 0;
+            padding: 0;
+            opacity: 1;
+            appearance: none;
+            border: 1px solid var(--ta-gris-subtexto);
+            background: #fff;
+            position: relative;
+            bottom: 10px;
+            right: 15px;
+
+            &:checked {
+              border: none;
+              background: var(--ta-socios);
+            }
+
+            &:checked:before,
+            &:checked:after {
+              content: "";
+              position: absolute;
+              height: 4px;
+              background: var(--ta-negro-texto);
+            }
+
+            &:checked:before {
+              width: 10px;
+              top: 14px;
+              left: 2px;
+              transform: rotate(44deg);
+            }
+
+            &:checked:after {
+              width: 18px;
+              top: 11px;
+              left: 5px;
+              transform: rotate(-55deg);
+            }
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .ayuda {
@@ -470,6 +674,20 @@
       @include button(var(--ta-negro-texto), var(--ta-gris-subtexto));
       text-transform: uppercase;
       padding: 5px 30px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .asociate-block-container {
+    .temas {
+      .tema {
+        .bg-color {
+          button {
+            font-size: 21px;
+          }
+        }
+      }
     }
   }
 }
@@ -646,6 +864,27 @@
       .ayuda {
         max-width: 75%;
         margin: 0 auto;
+      }
+    }
+
+    .temas {
+      .tema {
+        margin-top: 20px;
+        .bg-color {
+          button {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .articulos {
+      .articulo {
+        button {
+          .articulo-content {
+            min-height: 125px;
+          }
+        }
       }
     }
   }

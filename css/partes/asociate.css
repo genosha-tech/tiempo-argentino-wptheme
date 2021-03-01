@@ -15,6 +15,85 @@
   --ta-deportes-bg: #fff3ec;
 }
 
+.ta-context.asociate .btns-container button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  min-width: 130px;
+}
+.ta-context.asociate .btns-container button:focus {
+  border: none;
+  outline: none;
+}
+.ta-context.asociate .btns-container button.yellow-btn-white-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: white;
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.ta-context.asociate .btns-container button.yellow-btn-yellow-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-socios);
+  border: none;
+  color: var(--ta-socios-fondos);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.ta-context.asociate .btns-container button.yellow-btn-yellow-text.active {
+  color: var(--ta-negro-texto);
+}
+.ta-context.asociate .btns-container button.gray-btn-black-text {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-gris-fondos);
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+}
+.ta-context.asociate .btns-container button.transparent-btn {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+  color: var(--ta-negro-texto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+}
+
 .asociate-block-container {
   border: 1px solid var(--ta-gris-subtexto);
 }
@@ -155,87 +234,8 @@
   margin-left: 10px;
   margin-bottom: 0;
 }
-.asociate-block-container .btns-container button {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-.asociate-block-container .btns-container button:focus {
-  border: none;
-  outline: none;
-}
-.asociate-block-container .btns-container button.yellow-btn-white-text {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: white;
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.asociate-block-container .btns-container button.yellow-btn-yellow-text {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-socios);
-  border: none;
-  color: var(--ta-socios-fondos);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  text-transform: uppercase;
-  padding-left: 35px;
-  padding-right: 35px;
-}
-.asociate-block-container .btns-container button.yellow-btn-yellow-text.active {
-  color: var(--ta-negro-texto);
-}
-.asociate-block-container .btns-container button.gray-btn-black-text {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: var(--ta-gris-fondos);
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  min-width: 150px;
-}
-.asociate-block-container .btns-container button.transparent-btn {
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-  background-color: transparent;
-  border: none;
-  color: var(--ta-negro-texto);
-  font-size: 15px;
-  left: 50%;
-  line-height: 20px;
-  padding: 4px 10px;
-  font-family: "Red Hat Display";
-  font-style: normal;
-  font-weight: 900;
-}
 .asociate-block-container .form-container .input-container {
+  position: relative;
   margin-top: 15px;
 }
 .asociate-block-container .form-container .input-container input,
@@ -258,6 +258,9 @@
 .asociate-block-container .form-container .input-container select:focus {
   outline: none;
 }
+.asociate-block-container .form-container .input-container input.with-icon {
+  padding-left: 40px;
+}
 .asociate-block-container .form-container .input-container input:not(:placeholder-shown):valid {
   background: url(../../assets/images/correct-input.svg);
   background-size: 26px;
@@ -276,6 +279,11 @@
 .asociate-block-container .form-container .input-container input:not(:placeholder-shown):invalid + label {
   opacity: 0;
 }
+.asociate-block-container .form-container .input-container .input-icon img {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
 .asociate-block-container .form-container .input-container select {
   padding: 0 5px;
   min-width: 70px;
@@ -283,6 +291,18 @@
   font-style: normal;
   font-weight: 700;
   color: var(--ta-gris-subtexto);
+}
+.asociate-block-container .btns-container button {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: inherit;
+}
+.asociate-block-container .btns-container button.gray-btn-black-text {
+  min-width: 150px;
+}
+.asociate-block-container .asociate-wrapper > .img-container {
+  margin: 0 auto;
+  max-width: 250px;
 }
 .asociate-block-container .asociate-wrapper p {
   font-family: "Red Hat Display";
@@ -425,6 +445,161 @@
   padding: 5px;
   margin-top: 10px;
 }
+.asociate-block-container .temas .tema {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 340px;
+}
+.asociate-block-container .temas .tema .bg-color {
+  background-color: var(--ta-gris-fondos);
+}
+.asociate-block-container .temas .tema .bg-color button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: var(--ta-gris-fondos);
+  border: none;
+  color: var(--ta-gris-subtexto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  font-family: "Caladea";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+.asociate-block-container .temas .tema .bg-color button.active {
+  background-color: var(--ta-socios-fondos);
+  color: var(--ta-negro-texto);
+  left: -5px;
+  position: relative;
+  top: -5px;
+}
+.asociate-block-container .temas .tema .bg-color button:focus {
+  outline: none;
+}
+.asociate-block-container .articulos .articulo button {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  background-color: transparent;
+  border: none;
+  color: var(--ta-gris-subtexto);
+  font-size: 15px;
+  left: 50%;
+  line-height: 20px;
+  padding: 4px 10px;
+  padding: 0;
+  text-align: left;
+}
+.asociate-block-container .articulos .articulo button .line-height-0 .separator {
+  background-color: var(--ta-gris-subtexto);
+}
+.asociate-block-container .articulos .articulo button .articulo-content {
+  background-color: var(--ta-gris-fondos);
+  padding: 4px 10px;
+}
+.asociate-block-container .articulos .articulo button .articulo-content .topic p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.asociate-block-container .articulos .articulo button .articulo-content .description p {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  color: var(--ta-negro-texto);
+}
+.asociate-block-container .articulos .articulo button.active {
+  outline: none;
+  position: relative;
+  left: -5px;
+  top: -5px;
+}
+.asociate-block-container .articulos .articulo button.active .line-height-0 .separator {
+  background-color: var(--ta-socios);
+}
+.asociate-block-container .articulos .articulo button.active .articulo-content {
+  background-color: var(--ta-socios-fondos);
+  box-shadow: 5px 6px var(--ta-gris-fondos);
+}
+.asociate-block-container .articulos .articulo button.active .articulo-content .topic p {
+  color: var(--ta-negro-texto);
+}
+.asociate-block-container .articulos .articulo button:focus {
+  outline: none;
+}
+.asociate-block-container .fotos .foto {
+  padding: 5px 10px !important;
+}
+.asociate-block-container .fotos .foto .foto-block-container {
+  max-width: 225px;
+  background-color: var(--ta-socios);
+}
+.asociate-block-container .fotos .foto button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--ta-negro-texto);
+  outline: none;
+  position: relative;
+  /* .checkbox-container {
+    .foto-checkbox {
+      bottom: 5px;
+      right: 5px;
+    }
+  } */
+}
+.asociate-block-container .fotos .foto button.active {
+  background-color: var(--ta-socios-fondos);
+  left: -5px;
+  top: -5px;
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox {
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  padding: 0;
+  opacity: 1;
+  appearance: none;
+  border: 1px solid var(--ta-gris-subtexto);
+  background: #fff;
+  position: relative;
+  bottom: 10px;
+  right: 15px;
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:checked {
+  border: none;
+  background: var(--ta-socios);
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:checked:before, .asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:checked:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  background: var(--ta-negro-texto);
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:checked:before {
+  width: 10px;
+  top: 14px;
+  left: 2px;
+  transform: rotate(44deg);
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:checked:after {
+  width: 18px;
+  top: 11px;
+  left: 5px;
+  transform: rotate(-55deg);
+}
+.asociate-block-container .fotos .foto button .checkbox-container .foto-checkbox:focus {
+  outline: none;
+}
 
 .ayuda {
   word-break: break-all;
@@ -510,6 +685,11 @@
   padding: 5px 30px;
 }
 
+@media (min-width: 768px) {
+  .asociate-block-container .temas .tema .bg-color button {
+    font-size: 21px;
+  }
+}
 @media (min-width: 992px) {
   .asociate-block-container {
     min-height: 600px;
@@ -610,6 +790,15 @@
   .asociate-block-container .asociate-wrapper .ayuda {
     max-width: 75%;
     margin: 0 auto;
+  }
+  .asociate-block-container .temas .tema {
+    margin-top: 20px;
+  }
+  .asociate-block-container .temas .tema .bg-color button {
+    font-size: 24px;
+  }
+  .asociate-block-container .articulos .articulo button .articulo-content {
+    min-height: 125px;
   }
 
   .btns-container button {
