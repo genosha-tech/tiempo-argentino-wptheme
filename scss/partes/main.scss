@@ -33,6 +33,7 @@ a {
 .header {
   box-shadow: 0px 2px 2px #eef0f1;
   background-color: white;
+  position: sticky;
   z-index: 15;
   top: 0;
   &.sticky-default {
@@ -60,6 +61,9 @@ a {
         }
       }
     }
+  }
+  &.header-micrositio {
+    position: static;
   }
   .desktop-ribbon {
     background-color: var(--ta-negro-texto);
