@@ -23,7 +23,7 @@
 <body>
     <?php include_once($_SERVER["DOCUMENT_ROOT"] . "/partes/header.php");  ?>
     <div class="container ta-context participa mt-2 my-lg-5">
-        <div class="context-bg celeste">
+        <div class="context-bg amarillo">
             <div class="line-height-0">
                 <div class="separator m-0"></div>
             </div>
