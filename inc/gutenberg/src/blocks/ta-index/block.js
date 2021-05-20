@@ -7,15 +7,9 @@ import './article-meta-edicion-impresa';
 import './media-popup-photographer';
 import './commentary-author-selector';
 import './article-meta-participation';
+import './image-block-extension';
 
 wp.domReady( () => {
 	wp.blocks.unregisterBlockType( 'core/quote' );
     wp.blocks.unregisterBlockType( 'ta/container-with-header' );
 } );
-
-// import {hookComponentToNode} from './admin-components';
-
-// setTimeout( () => {
-//     // render(<TAAuthorsSelector/>, document.querySelector('.wp-admin.index-php #wpbody'));
-//     render(<TAAuthorsSelector/>, document.getElementById('wpbody'));
-// }, 2000)

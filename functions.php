@@ -548,3 +548,22 @@ function author_order_column($columns){
 	$columns['author'] = 'author';
 	return $columns;
 }
+
+function ta_extend_image_block($block_content, $block){
+	if ( $block['blockName'] === 'core/image' ){
+		$attrs = $block['attrs'];
+		$photographer = ta_get_attachment_photographer($attrs['id']);
+
+		if($photographer){
+			ob_start();
+			get_template_part('parts/image', 'copyright', array('photographer' => $photographer));
+			$photographer_html = ob_get_clean();
+		}
+
+		if( isset($attrs['showPhotographer']) && $attrs['showPhotographer'] )
+			$block_content .= $photographer_html;
+	}
+	return $block_content;
+}
+
+add_filter( 'render_block', 'ta_extend_image_block', 10, 2);

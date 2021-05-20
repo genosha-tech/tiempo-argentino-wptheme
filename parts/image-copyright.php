@@ -1,13 +1,14 @@
 <?php
 $defaults = array(
     'photographer'      => null,
+    'class'             => '',
 );
 extract(array_merge($defaults, $args));
 
 if(!$photographer || !$photographer->name)
     return;
 ?>
-<div class="credits text-right mt-2 d-flex justify-content-end align-items-center">
+<div class="photoghrapher-box credits mt-2 d-flex <?php echo esc_attr($class); ?> align-items-center">
     <div class="credits-info d-flex flex-column mr-2">
         <p>Foto: <?php echo esc_html($photographer->name); ?></p>
         <?php if($photographer->main_red_social): ?>

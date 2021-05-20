@@ -51,7 +51,10 @@ $authors = $article->authors;
                             <div class="img-wrapper" id="article-main-image">
                                 <img src="<?php echo esc_attr($thumbnail['url']); ?>" alt="<?php echo esc_attr($thumbnail['alt']); ?>" class="img-fluid w-100" />
                             </div>
-                            <?php get_template_part('parts/image', 'copyright', array('photographer' => $thumbnail['author'])); ?>
+                            <?php get_template_part('parts/image', 'copyright', array(
+                                'photographer'  => $thumbnail['author'],
+                                'class'         => 'justify-content-end',
+                            )); ?>
                         </div>
                         <?php endif; ?>
 
