@@ -351,6 +351,21 @@ window.addEventListener("resize", function () {
     }
   });
 
-  
-  
+  $(document).ready(function () {
+    const mql = window.matchMedia("(min-width: 992px)");
+    
+    const menuDropDownOpenOnDesktop = () => {
+      if (mql.matches && $(".menu .card-header .btn-link").hasClass("collapsed")) {
+        $(".menu .card-header .btn-link").click();
+      } else if(!mql.matches && !($(".menu .card-header .btn-link").hasClass("collapsed")) ) {
+        $(".menu .card-header .btn-link").click();
+      }
+    }
+    
+    menuDropDownOpenOnDesktop();
+
+    $( window ).resize(menuDropDownOpenOnDesktop)
+  })
+
+
 })(jQuery);

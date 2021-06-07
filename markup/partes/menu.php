@@ -133,14 +133,14 @@ $extra_menu_items = RB_Menu::get_menu_items('extra-menu');
                     <div class="accordion-menu-section" id="accordion1">
                         <div class="card">
                             <div class="card-header" id="headingOne">
-                                <button class="btn btn-link d-flex px-md-0" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link d-flex px-md-0 collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne">
                                     <img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/gray-arrow.svg" class="accordion-arrow" alt="">
                                     <h5><?php echo __('SECCIONES','gen-base-theme')?></h5>
                                 </button>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordion1">
                                 <div class="card-body pt-0 pb-3">
                                     <div class="menu-section">
@@ -190,14 +190,14 @@ $extra_menu_items = RB_Menu::get_menu_items('extra-menu');
                     <div class="accordion-menu-section" id="accordion2">
                         <div class="card">
                             <div class="card-header" id="headingTwo">
-                                <button class="btn btn-link d-flex px-md-0" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="true" aria-controls="collapseOne">
+                                <button class="btn btn-link d-flex px-md-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseOne">
                                     <img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/gray-arrow.svg" class="accordion-arrow" alt="">
                                     <h5>E<?php echo __('SPECIALES','gen-base-theme')?></h5>
                                 </button>
                             </div>
 
-                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne"
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordion2">
                                 <div class="card-body pt-0 pb-3">
                                     <div class="menu-section">
