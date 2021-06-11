@@ -1,0 +1,398 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  color: #252B2D;
+}
+
+img {
+  max-width: 100%;
+}
+
+.description {
+  font-family: 'Libre Baskerville', sans-serif;
+  margin: 0 1rem 1rem;
+  text-align: center;
+}
+
+.btn {
+  font-family: 'Red Hat Display', sans-serif;
+  text-decoration: none;
+  width: 225px;
+  text-align: center;
+  font-size: 19px;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16A1DC;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #16A1DC;
+  border: solid 1px #16A1DC;
+}
+
+p.desc, span.desc {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+}
+
+p.desc.medium, span.desc.medium {
+  font-weight: 500;
+}
+
+p.desc.bold, span.desc.bold {
+  font-weight: bold;
+}
+
+p.tit {
+  font-family: 'Caladea', sans-serif;
+  font-weight: bold;
+  color: #16A1DC;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.background-cyan-light {
+  background: #EBF7FE;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .img-logo {
+  width: 60vw;
+  max-width: 368px;
+  margin: 1.5rem 0;
+}
+
+header h1 {
+  font-family: Caladea, sans-serif;
+  color: #252B2D;
+  text-align: center;
+  margin: 1.2rem;
+  margin-top: 0;
+}
+
+header .description {
+  margin: 0 1rem 1rem;
+  text-align: center;
+}
+
+header .container-btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container-btn-primary .btn {
+  margin: 0.6rem 0;
+}
+
+header .ilus {
+  width: 80vw;
+}
+
+header p.desc {
+  margin: 0.5rem 1.5rem;
+  text-align: center;
+}
+
+header .title-cyan {
+  font-family: 'Caladea', sans-serif;
+  font-size: 22px;
+  color: #16A1DC;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 1.5rem;
+}
+
+main section {
+  padding: 1.5rem;
+}
+
+main section .mini-title {
+  margin-bottom: 1rem;
+}
+
+main section .mini-title .line {
+  height: 2px;
+  width: 45px;
+  background: #16A1DC;
+  margin: 0.5rem 0;
+}
+
+main section .mini-title p {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+main section .content .title {
+  font-family: Caladea, sans-serif;
+  color: #252B2D;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 1.2rem;
+}
+
+main section .content .content-membresia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .content .content-membresia .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+main section .content .content-membresia .item p.desc {
+  text-align: center;
+}
+
+main section .content .content-membresia .item img {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
+
+main section .content .content-membresia .item:last-child {
+  margin-bottom: 0;
+}
+
+main section .container-options-lectores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .container-options-lectores img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+main section .container-options-lectores .item {
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+main section .container-options-lectores .item:last-child {
+  margin-bottom: 0;
+}
+
+main section .container-options-experiencia {
+  margin-top: 2rem;
+}
+
+main section .container-options-experiencia .item {
+  margin-bottom: 2rem;
+}
+
+main section .container-options-experiencia .item:last-child {
+  margin-bottom: 0;
+}
+
+main section .content-redaccion .container-img-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .content-redaccion .container-img-desc img {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+main section .content-redaccion .container-img-desc .container-desc {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section .content-redaccion .container-img-desc .container-desc .item {
+  margin-bottom: 2rem;
+}
+
+main section .content-redaccion .item {
+  margin-bottom: 2rem;
+}
+
+main section .content-redaccion .item:last-child {
+  margin-bottom: 0;
+}
+
+main section .content-acerca-de {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .content-acerca-de img {
+  width: 300px;
+}
+
+main section .content-acerca-de .container-texts {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .content-acerca-de .container-texts img {
+  max-width: 200px;
+  margin: 1.5rem;
+}
+
+main section .content-acerca-de .container-texts .acerca-de-tit {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: 20px;
+  color: #16A1DC;
+  margin-bottom: 1rem;
+}
+
+main section .content-acerca-de .container-texts p {
+  text-align: center;
+}
+
+main section .content-acerca-de .container-texts p.desc.bold {
+  margin: 1rem;
+}
+
+main section .content-google-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section .content-google-desc img {
+  width: 80%;
+  max-width: 360px;
+}
+
+main section .content-google-desc p.desc.medium {
+  margin: 1rem;
+  text-align: center;
+}
+
+footer {
+  margin: 1.5rem;
+}
+
+footer .line {
+  height: 2px;
+  width: 45px;
+  background: #849899;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  color: #849899;
+  font-weight: 900;
+  font-size: 14px;
+}
+/*# sourceMappingURL=styles.css.map */
