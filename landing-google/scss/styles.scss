@@ -25,9 +25,9 @@ img{
     width: 225px;
     text-align: center;
     font-size: 19px;
-    padding: 0.5rem 0;
+    padding: 0.6rem 0;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
 }
 .btn-primary{
     color: #fff;
@@ -37,7 +37,7 @@ img{
 .btn-secondary{
     background: #fff;
     color: #16A1DC;
-    border: solid 1px #16A1DC;
+    border: solid 2px #16A1DC;
 }
 
 p.desc, span.desc{
@@ -50,7 +50,7 @@ p.desc.medium, span.desc.medium{
 }
 
 p.desc.bold, span.desc.bold{
-    font-weight: bold;
+    font-weight: 900;
 }
 
 p.tit{
@@ -129,7 +129,7 @@ main{
             }
             p{
                 font-size: 12px;
-                font-weight: bold;
+                font-weight: 900;
                 text-transform: uppercase;
             }
         }
@@ -310,12 +310,16 @@ footer{
         font-size: 26px;
     }
     header{
+        .img-logo{
+            margin: 4.5rem 0 3.5rem;
+        }
         h1{
             font-size: 39px;
         }
         .container-btn-primary{
+            margin: 1rem 0;
             .btn{
-                margin: 0.6rem;
+                margin: 0.8rem;
             }
         }
         .description{
@@ -323,11 +327,12 @@ footer{
             max-width: 1024px;
         }
         .ilus{
+            margin: 1.5rem 0;
             max-width: 1024px;
         }
         .background-cyan-light{
             max-width: 1440px;
-            margin: 2rem 1rem;
+            margin: 4rem 0 2rem;
             .title-cyan{
                 font-size: 39px;
                 margin-bottom: 1rem;
@@ -337,9 +342,16 @@ footer{
 
     main{
         section{
+            padding: 1.5rem 3.5rem;
+            max-width: 1440px;
+            margin: auto;
             .mini-title{
                 p{
                     font-size: 16px;
+                }
+                .line{
+                    width: 72px;
+                    margin: 0.5rem 0 1rem;
                 }
             }
             .content{
@@ -352,11 +364,13 @@ footer{
                     align-items: flex-start;
                     max-width: 1024px;
                     .item{
-                        width: 50%;
+                        width: 47%;
                         max-width: none;
+                        margin: 1rem 1.5%;
                         img{
-                            width: 200px;
-                            height: 83px;
+                            width: 261px;
+                            height: 160px;
+                            max-width: none;
                             object-fit: contain;
                         }
                     }
@@ -367,14 +381,21 @@ footer{
                 max-width: 1024px;
 
                 img{
-                    width: 40%;
-                    margin: 0 4% 2rem;
+                    width: 47%;
+                    margin: 0 1.5% 2rem;
                 }
                 .item{
                     max-width: none;
                     margin-bottom: 2rem;
-                    width: 40%;
-                    margin: 0 4% 2rem;
+                    width: 47%;
+                    margin: 0 1.5% 2rem;
+                }
+            }
+            .container-options-experiencia{
+                .item{
+                    .desc{
+                        white-space: pre-line;
+                    }
                 }
             }
             .content-redaccion{
@@ -383,13 +404,13 @@ footer{
                     align-items: center;
                     width: 100%;
                     img{
-                        width: 50%;
+                        width: 47%;
                         max-width: none;
                     }
                     .container-desc{
-                        width: 45%;
+                        width: 47%;
                         max-width: none;
-                        margin-left: 5%;
+                        margin-left: 3%;
                         .item{
                             width: 100%;
                         }
@@ -402,12 +423,12 @@ footer{
                 width: 100%;
                 margin: auto;
                 img{
-                    width: 42%;
+                    width: 44%;
                 }
 
                 .container-texts{
                     max-width: none;
-                    width: 56%;
+                    width: 54%;
                     margin-left: 2%;
 
                     img{
@@ -416,19 +437,30 @@ footer{
                     .acerca-de-tit{
                         font-size: 36px;
                     }
+                    p.desc.bold{
+                        margin: 2rem 0 1rem;
+                    }
                 }
             }
             .content-google-desc{
                 img{
                     max-width: 512px;
                 }
+                .btn.btn-secondary{
+                    margin-top: 5rem;
+                }
             }
         }
     }
 
     footer{
+        margin: 1.5rem 3.5rem;
         p{
             font-size: 16px;
+        }
+        .line{
+            width: 72px;
+            margin: 0.5rem 0 1rem;
         }
     }
 }
