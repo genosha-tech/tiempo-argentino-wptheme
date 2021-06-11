@@ -63,6 +63,7 @@ p.tit{
 
 .background-cyan-light{
     background: #EBF7FE;
+    padding: 1rem 0;
 }
 
 
@@ -90,7 +91,7 @@ header{
     }
     .container-btn-primary{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
@@ -292,5 +293,108 @@ footer{
         color: #849899;
         font-weight: 900;
         font-size: 14px;
+    }
+}
+
+@media(min-width: 768px){
+    p.desc, span.desc{
+        font-size: 24px;
+        max-width: 1024px;
+    }
+
+    p.tit{
+        font-size: 30px;
+    }
+
+    .description{
+        font-size: 26px;
+    }
+    header{
+        h1{
+            font-size: 39px;
+        }
+        .container-btn-primary{
+            .btn{
+                margin: 0.6rem;
+            }
+        }
+        .description{
+            font-size: 26px;
+            max-width: 1024px;
+        }
+        .ilus{
+            max-width: 1024px;
+        }
+        .background-cyan-light{
+            max-width: 1440px;
+            margin: 2rem 1rem;
+            .title-cyan{
+                font-size: 39px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    main{
+        section{
+            .mini-title{
+                p{
+                    font-size: 16px;
+                }
+            }
+            .content{
+                .title{
+                    font-size: 39px;
+                }
+                .content-membresia{
+                    align-items: flex-start;
+                    max-width: 1024px;
+                    .item{
+                        width: 50%;
+                        max-width: none;
+                        img{
+                            width: 200px;
+                            height: 83px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+            .container-options-lectores{
+                align-items: flex-start;
+                max-width: 1024px;
+
+                img{
+                    width: 40%;
+                    margin: 0 4% 2rem;
+                }
+                .item{
+                    max-width: none;
+                    margin-bottom: 2rem;
+                    width: 40%;
+                    margin: 0 4% 2rem;
+                }
+            }
+            .content-redaccion{
+                max-width: 1024px;
+                .container-img-desc{
+                    align-items: center;
+                    width: 100%;
+                    img{
+                        width: 50%;
+                        max-width: none;
+                    }
+                    .container-desc{
+                        width: 45%;
+                        max-width: none;
+                        margin-left: 5%;
+                        .item{
+                            width: 100%;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 }

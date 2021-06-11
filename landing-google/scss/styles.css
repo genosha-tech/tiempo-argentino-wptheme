@@ -65,6 +65,7 @@ p.tit {
 
 .background-cyan-light {
   background: #EBF7FE;
+  padding: 1rem 0;
 }
 
 header {
@@ -107,10 +108,8 @@ header .container-btn-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,5 +393,98 @@ footer p {
   color: #849899;
   font-weight: 900;
   font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  p.desc, span.desc {
+    font-size: 24px;
+    max-width: 1024px;
+  }
+  p.tit {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 26px;
+  }
+  header h1 {
+    font-size: 39px;
+  }
+  header .container-btn-primary .btn {
+    margin: 0.6rem;
+  }
+  header .description {
+    font-size: 26px;
+    max-width: 1024px;
+  }
+  header .ilus {
+    max-width: 1024px;
+  }
+  header .background-cyan-light {
+    max-width: 1440px;
+    margin: 2rem 1rem;
+  }
+  header .background-cyan-light .title-cyan {
+    font-size: 39px;
+    margin-bottom: 1rem;
+  }
+  main section .mini-title p {
+    font-size: 16px;
+  }
+  main section .content .title {
+    font-size: 39px;
+  }
+  main section .content .content-membresia {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 1024px;
+  }
+  main section .content .content-membresia .item {
+    width: 50%;
+    max-width: none;
+  }
+  main section .content .content-membresia .item img {
+    width: 200px;
+    height: 83px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main section .container-options-lectores {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 1024px;
+  }
+  main section .container-options-lectores img {
+    width: 40%;
+    margin: 0 4% 2rem;
+  }
+  main section .container-options-lectores .item {
+    max-width: none;
+    margin-bottom: 2rem;
+    width: 40%;
+    margin: 0 4% 2rem;
+  }
+  main section .content-redaccion {
+    max-width: 1024px;
+  }
+  main section .content-redaccion .container-img-desc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  main section .content-redaccion .container-img-desc img {
+    width: 50%;
+    max-width: none;
+  }
+  main section .content-redaccion .container-img-desc .container-desc {
+    width: 45%;
+    max-width: none;
+    margin-left: 5%;
+  }
+  main section .content-redaccion .container-img-desc .container-desc .item {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
