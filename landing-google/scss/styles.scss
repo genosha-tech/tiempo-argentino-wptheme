@@ -343,6 +343,8 @@ footer{
                 }
             }
             .content{
+                max-width: 1024px;
+                margin: auto;
                 .title{
                     font-size: 39px;
                 }
@@ -395,6 +397,38 @@ footer{
 
                 }
             }
+            .content-acerca-de{
+                max-width: 1024px;
+                width: 100%;
+                margin: auto;
+                img{
+                    width: 42%;
+                }
+
+                .container-texts{
+                    max-width: none;
+                    width: 56%;
+                    margin-left: 2%;
+
+                    img{
+                        max-width: 312px;
+                    }
+                    .acerca-de-tit{
+                        font-size: 36px;
+                    }
+                }
+            }
+            .content-google-desc{
+                img{
+                    max-width: 512px;
+                }
+            }
+        }
+    }
+
+    footer{
+        p{
+            font-size: 16px;
         }
     }
 }

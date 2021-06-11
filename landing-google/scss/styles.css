@@ -430,6 +430,10 @@ footer p {
   main section .mini-title p {
     font-size: 16px;
   }
+  main section .content {
+    max-width: 1024px;
+    margin: auto;
+  }
   main section .content .title {
     font-size: 39px;
   }
@@ -485,6 +489,31 @@ footer p {
   }
   main section .content-redaccion .container-img-desc .container-desc .item {
     width: 100%;
+  }
+  main section .content-acerca-de {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+  main section .content-acerca-de img {
+    width: 42%;
+  }
+  main section .content-acerca-de .container-texts {
+    max-width: none;
+    width: 56%;
+    margin-left: 2%;
+  }
+  main section .content-acerca-de .container-texts img {
+    max-width: 312px;
+  }
+  main section .content-acerca-de .container-texts .acerca-de-tit {
+    font-size: 36px;
+  }
+  main section .content-google-desc img {
+    max-width: 512px;
+  }
+  footer p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
