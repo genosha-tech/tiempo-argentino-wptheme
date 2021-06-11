@@ -251,6 +251,10 @@ main section .container-options-experiencia .item {
   margin-bottom: 2rem;
 }
 
+main section .container-options-experiencia .item .desc {
+  white-space: pre-line;
+}
+
 main section .container-options-experiencia .item:last-child {
   margin-bottom: 0;
 }
