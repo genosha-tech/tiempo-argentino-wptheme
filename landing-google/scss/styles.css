@@ -440,6 +440,7 @@ footer p {
     margin-bottom: 1rem;
   }
   header .background-cyan-light .desc {
+    margin: 0.5rem auto;
     text-align: center;
   }
   main section {
@@ -556,6 +557,31 @@ footer p {
   footer .line {
     width: 72px;
     margin: 0.5rem 0 1rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  p.desc, span.desc {
+    font-size: 18px;
+    max-width: 1024px;
+  }
+  .content-redaccion .container-img-desc {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .content-redaccion .container-img-desc img {
+    width: 49% !important;
+    max-width: none;
+  }
+  .content-redaccion .container-img-desc .container-desc {
+    width: 48%;
+    max-width: none;
+    margin-left: 3%;
+  }
+  .content-redaccion .container-img-desc .container-desc .item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -342,6 +342,7 @@ footer{
                 margin-bottom: 1rem;
             }
             .desc{
+                margin: 0.5rem auto;
                 text-align: center;
             }
         }
@@ -468,6 +469,32 @@ footer{
         .line{
             width: 72px;
             margin: 0.5rem 0 1rem;
+        }
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    p.desc, span.desc {
+        font-size: 18px;
+        max-width: 1024px;
+    }
+    .content-redaccion{
+        .container-img-desc{
+            align-items: center;
+            width: 100%;
+            img{
+                width: 49% !important;
+                max-width: none;
+            }
+            .container-desc{
+                width: 48%;
+                max-width: none;
+                margin-left: 3%;
+                .item{
+                    width: 100%;
+                }
+            }
+
         }
     }
 }
