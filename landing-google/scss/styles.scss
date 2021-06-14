@@ -96,7 +96,7 @@ header{
         align-items: center;
 
         .btn{
-            margin: 0.6rem 0;
+            margin: 0.6rem 0.6rem;
         }
     }
     .ilus{
@@ -180,7 +180,7 @@ main{
                 margin-bottom: 2rem;
             }
             .item{
-                max-width: 300px;
+                max-width: none;
                 margin-bottom: 2rem;
             }
             .item:last-child{
@@ -213,7 +213,7 @@ main{
                     margin-bottom: 2rem;
                 }
                 .container-desc{
-                    max-width: 300px;
+                    max-width: none;
                     display: flex;
                     flex-direction: column;
 
@@ -334,11 +334,15 @@ footer{
             max-width: 1024px;
         }
         .background-cyan-light{
+            width: 95%;
             max-width: 1440px;
-            margin: 4rem 0 2rem;
+            margin: 4rem auto 2rem;
             .title-cyan{
                 font-size: 39px;
                 margin-bottom: 1rem;
+            }
+            .desc{
+                text-align: center;
             }
         }
     }
