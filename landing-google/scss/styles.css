@@ -20,6 +20,11 @@ img {
   text-align: center;
 }
 
+.description.p-cyan {
+  color: #16A1DC;
+  margin-top: 2.5rem;
+}
+
 .btn {
   font-family: 'Red Hat Display', sans-serif;
   text-decoration: none;
@@ -47,12 +52,24 @@ p.desc, span.desc {
   font-size: 16px;
 }
 
+p.desc.regular, span.desc.regular {
+  font-weight: 300;
+}
+
 p.desc.medium, span.desc.medium {
   font-weight: 500;
 }
 
 p.desc.bold, span.desc.bold {
   font-weight: 900;
+}
+
+p.mb-2, span.mb-2 {
+  margin-bottom: 2rem;
+}
+
+p.desc.italic, span.desc.italic {
+  font-style: italic;
 }
 
 p.tit {
@@ -401,6 +418,16 @@ main section .content-google-desc p.desc.medium {
   text-align: center;
 }
 
+main section.bg-cyan-w100 {
+  background: #EBF7FE;
+  padding-top: 0;
+  margin: 2rem auto;
+}
+
+main section.bg-cyan-w100 .content {
+  text-align: center;
+}
+
 footer {
   margin: 1.5rem;
 }
@@ -422,6 +449,9 @@ footer p {
   p.desc, span.desc {
     font-size: 24px;
     max-width: 1024px;
+  }
+  .description.p-cyan {
+    margin-top: 3.5rem;
   }
   p.tit {
     font-size: 30px;
@@ -589,6 +619,10 @@ footer p {
   p.desc, span.desc {
     font-size: 18px;
     max-width: 1024px;
+  }
+  .description.p-cyan {
+    color: #16A1DC;
+    margin-top: 3.5rem;
   }
   .content-redaccion .container-img-desc {
     -webkit-box-align: center;
