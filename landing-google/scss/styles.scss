@@ -61,6 +61,11 @@ p.tit{
     margin-bottom: 0.5rem;
 }
 
+a{
+    color: #252B2D;
+    font-weight: 900;
+}
+
 .background-cyan-light{
     background: #EBF7FE;
     padding: 1rem 0;
@@ -94,9 +99,16 @@ header{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-
+        flex-direction: column;
+        margin-bottom: 0.8rem;
         .btn{
             margin: 0.6rem 0.6rem;
+        }
+        .btn-primary{
+            margin-bottom: 0.3rem;
+        }
+        p.aclaracion{
+            font-size: 0.8rem;
         }
     }
     .ilus{
@@ -324,6 +336,12 @@ footer{
             margin: 1rem 0;
             .btn{
                 margin: 0.8rem;
+            }
+            .btn-primary{
+                margin-bottom: 0.3rem;
+            }
+            p.aclaracion{
+                font-size: 1.2rem;
             }
         }
         .description{

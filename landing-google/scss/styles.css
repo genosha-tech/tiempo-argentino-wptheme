@@ -63,6 +63,11 @@ p.tit {
   margin-bottom: 0.5rem;
 }
 
+a {
+  color: #252B2D;
+  font-weight: 900;
+}
+
 .background-cyan-light {
   background: #EBF7FE;
   padding: 1rem 0;
@@ -116,10 +121,23 @@ header .container-btn-primary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.8rem;
 }
 
 header .container-btn-primary .btn {
   margin: 0.6rem 0.6rem;
+}
+
+header .container-btn-primary .btn-primary {
+  margin-bottom: 0.3rem;
+}
+
+header .container-btn-primary p.aclaracion {
+  font-size: 0.8rem;
 }
 
 header .ilus {
@@ -422,6 +440,12 @@ footer p {
   }
   header .container-btn-primary .btn {
     margin: 0.8rem;
+  }
+  header .container-btn-primary .btn-primary {
+    margin-bottom: 0.3rem;
+  }
+  header .container-btn-primary p.aclaracion {
+    font-size: 1.2rem;
   }
   header .description {
     font-size: 26px;
