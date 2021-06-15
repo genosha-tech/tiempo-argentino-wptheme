@@ -428,6 +428,10 @@ main section.bg-cyan-w100 .content {
   text-align: center;
 }
 
+main section.bg-cyan-w100 .content a {
+  font-weight: normal;
+}
+
 footer {
   margin: 1.5rem;
 }
