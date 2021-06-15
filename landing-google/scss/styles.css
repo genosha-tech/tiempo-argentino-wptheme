@@ -241,6 +241,7 @@ main section .container-options-lectores .item {
 
 main section .container-options-lectores .item:last-child {
   margin-bottom: 0;
+  width: 100%;
 }
 
 main section .container-options-experiencia {
