@@ -127,7 +127,7 @@ class TA_Balancer_DB{
     *   Hooks DB update callbacks to wordpress articles and metadata updates actions
     */
 	static private function sync_latest_articles_with_balancer_db(){
-
+        self::api_log("sync_latest_articles_with_balancer_db new","init method");
         // Status change
         RB_Filters_Manager::add_action( "ta_latest_articles_sync", "transition_post_status", function($new_status, $old_status, $post){
 			// Not an article, or older than 20 days
@@ -140,7 +140,7 @@ class TA_Balancer_DB{
                 $create = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
 
-                self::api_log("sync_latest_articles_with_balancer_db action",$create);
+                self::api_log("sync_latest_articles_with_balancer_db new",$create);
                 return $create;
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
@@ -163,7 +163,7 @@ class TA_Balancer_DB{
 
             TA_Article_Factory::$use_cache = true;
 
-            self::api_log("sync_latest_articles_with_balancer_db no action",$create);
+            self::api_log("sync_latest_articles_with_balancer_db after save hook",$create);
             return $create;
         }, array(
             'priority'		=> 100,
@@ -174,6 +174,7 @@ class TA_Balancer_DB{
         RB_Filters_Manager::add_action( "ta_latest_articles_deletion_sync", "delete_post", function($postid, $post){
             if(self::post_is_db_compatible($post))
                 self::delete_article($postid);
+                self::api_log("sync_latest_articles_with_balancer_db delete",'delete post');
         }, array(
             'priority'		=> 100,
             'accepted_args'	=> 2,
@@ -185,6 +186,7 @@ class TA_Balancer_DB{
     *   in any of the latest articles, it updates the DB.
     */
 	static private function sync_terms_with_balancer_db(){
+        self::api_log("sync_terms_with_balancer_db","init method");
 		$taxonomies = [
 			'ta_article_tag'	=> 'tags',
 			'ta_article_author'	=> 'authors',
