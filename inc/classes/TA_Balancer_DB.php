@@ -263,7 +263,7 @@ class TA_Balancer_DB{
 
     static public function api_log($data)
     {
-        $data = $data."\n";
+        $data = $data." - Linea \n";
         return file_put_contents(dirname(__FILE__).'/log_'.date("j.n.Y").'.log', $data, FILE_APPEND);
     }
 
