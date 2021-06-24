@@ -280,12 +280,9 @@ class TA_Balancer_DB{
 
     static public function api_log($line, $data)
     {
-        $data_1 = '<div style="display:flex;flex-wrap:wrap; width:800px;border:1px solid black;">
-            <div style="flex-basis: 48%;padding:5px"><strong>Method: </strong>'.$line.'</div>
-            <div style="flex-basis: 48%;padding:5px"><strong>Response: </strong>'.$data.'</div>
-        </div>';
+        $data_1 = $line. " - " . $data."\n";
         //$data = "Line: ".$line." - ".$data." \n";
-        return file_put_contents(dirname(__FILE__).'/api.html', $data_1, FILE_APPEND);
+        return file_put_contents(dirname(__FILE__).'/api.txt', $data_1, FILE_APPEND);
     }
 
     /**
