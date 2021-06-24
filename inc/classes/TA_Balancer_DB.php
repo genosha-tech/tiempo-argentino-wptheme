@@ -136,10 +136,10 @@ class TA_Balancer_DB{
 			// no previous status or new status publish
 			if ( $new_status == 'new' || $new_status == 'publish' ){
 				TA_Article_Factory::$use_cache = false;
-                self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
+                $insert = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
 
-               // self::api_log('sync_latest_articles_with_balancer_db', 'cree un post nuevo');
+                self::api_log('sync_latest_articles_with_balancer_db', 'cree un post nuevo '.$insert);
 
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
@@ -158,9 +158,11 @@ class TA_Balancer_DB{
             // We don't use $meta_value directly because it may need some proccesing from the TA_Article, like with ta_article_isopinion
             TA_Article_Factory::$use_cache = false;
 
-            self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
+            $insert = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
 
             TA_Article_Factory::$use_cache = true;
+
+            self::api_log('sync_latest_articles_with_balancer_db', 'actualice un post nuevo '.$insert);
 
         }, array(
             'priority'		=> 100,
@@ -301,7 +303,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("create_or_update_article",$insert);
+        //self::api_log("create_or_update_article",$insert);
         return $insert;
     }
 
