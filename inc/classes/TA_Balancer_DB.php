@@ -139,6 +139,9 @@ class TA_Balancer_DB{
 				TA_Article_Factory::$use_cache = false;
                 $create = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
+
+                self::api_log("sync_latest_articles_with_balancer_db action",$create);
+                return $create;
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
                 self::delete_article($post->ID);
@@ -155,8 +158,13 @@ class TA_Balancer_DB{
             // we removed the cache to avoid grabbing old values stored before meta_update
             // We don't use $meta_value directly because it may need some proccesing from the TA_Article, like with ta_article_isopinion
             TA_Article_Factory::$use_cache = false;
+
             $create = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
+
             TA_Article_Factory::$use_cache = true;
+
+            self::api_log("sync_latest_articles_with_balancer_db no action",$create);
+            return $create;
         }, array(
             'priority'		=> 100,
             'accepted_args'	=> 4,
@@ -218,11 +226,15 @@ class TA_Balancer_DB{
         // execute
         $output = curl_exec($ch);
 		// errors
-		if (curl_errno($ch))
+		if (curl_exec($ch) === false)
 			error_log(curl_error($ch));
         // free
+        //log
+        $msg = curl_exec($ch) === false ? 'mk_curl_req error' : 'mk_curl_req';
+        self::api_log($msg,curl_exec($ch) === false ? curl_error($ch) : $output);
+
         curl_close($ch);
-        self::api_log($output);
+       
         return $output;
     }
 
@@ -249,22 +261,25 @@ class TA_Balancer_DB{
         // var_dump(wp_list_pluck($query->posts, 'ID'));
         if($articles){
             self::delete_all_articles();
-            self::make_curl_req(array(
+            $insert = self::make_curl_req(array(
                 CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/allposts"),
                 CURLOPT_RETURNTRANSFER    	=> true,
                 CURLOPT_CUSTOMREQUEST 		=> 'POST',
                 CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
                 CURLOPT_POSTFIELDS			=> json_encode($articles),
-                CURLOPT_SSL_VERIFYHOST      => 0
+                CURLOPT_SSL_VERIFYHOST      => 0,
+                CURLOPT_VERBOSE             => true
             ));
+            self::api_log("insert_latest_articles",$insert);
+            return $insert;
         }
     }
 
 
-    static public function api_log($data)
+    static public function api_log($line, $data)
     {
-        $data = $data." - Linea \n";
-        return file_put_contents(dirname(__FILE__).'/log_'.date("j.n.Y").'.log', $data, FILE_APPEND);
+        $data = "Line: ".$line." - ".$data." \n";
+        return file_put_contents(dirname(__FILE__).'/api.log', $data, FILE_APPEND);
     }
 
     /**
@@ -272,7 +287,7 @@ class TA_Balancer_DB{
     *   @param mixed[] $article_data
     */
     static public function create_or_update_article($article_data){
-        return self::make_curl_req(array(
+        $insert = self::make_curl_req(array(
             CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/649846"),
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'PUT',
@@ -281,6 +296,9 @@ class TA_Balancer_DB{
             CURLOPT_SSL_VERIFYHOST      => 0,
             CURLOPT_VERBOSE             => true
         ));
+
+        self::api_log("create_or_update_article",$insert);
+        return $insert;
     }
 
     /**
@@ -288,7 +306,7 @@ class TA_Balancer_DB{
     *   @param int $article_id
     */
     static public function delete_article($article_id){
-        return self::make_curl_req(array(
+        $delete = self::make_curl_req(array(
             CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/$article_id"),
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'DELETE',
@@ -296,6 +314,9 @@ class TA_Balancer_DB{
             CURLOPT_SSL_VERIFYHOST      => 0,
             CURLOPT_VERBOSE             => true
         ));
+
+        self::api_log("delete_article",$delete);
+        return $delete;
     }
 
     /**
@@ -304,7 +325,7 @@ class TA_Balancer_DB{
     *   @param string $taxonomy
     */
     static public function delete_term($term_id, $taxonomy){
-        return self::make_curl_req(array(
+        $delete = self::make_curl_req(array(
             CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/terms/324324234"),
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'PUT',
@@ -316,13 +337,16 @@ class TA_Balancer_DB{
             CURLOPT_SSL_VERIFYHOST      => 0,
             CURLOPT_VERBOSE             => true
         ));
+
+        self::api_log("delete_term",$delete);
+        return $delete;
     }
 
     /**
     *   Deletes all articles from the DB
     */
     static public function delete_all_articles(){
-        return self::make_curl_req(array(
+        $delete = self::make_curl_req(array(
             CURLOPT_URL               	=> self::get_api_endpoint("/api/posts"),
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'DELETE',
@@ -330,6 +354,9 @@ class TA_Balancer_DB{
             CURLOPT_SSL_VERIFYHOST      => 0,
             CURLOPT_VERBOSE             => true
         ));
+
+        self::api_log("delete_all_articles",$delete);
+        return $delete;
     }
 
     /**
@@ -337,7 +364,7 @@ class TA_Balancer_DB{
     *   @param mixed[] $author_data
     */
     static public function update_author($author_data){
-        return self::make_curl_req(array(
+        $update = self::make_curl_req(array(
             CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/updateauthor/324324234"),
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'PUT',
@@ -346,6 +373,9 @@ class TA_Balancer_DB{
             CURLOPT_SSL_VERIFYHOST      => 0,
             CURLOPT_VERBOSE             => true
         ));
+
+        self::api_log("update_author",$update);
+        return $update;
     }
 }
 
