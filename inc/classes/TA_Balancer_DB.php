@@ -127,7 +127,6 @@ class TA_Balancer_DB{
     *   Hooks DB update callbacks to wordpress articles and metadata updates actions
     */
 	static private function sync_latest_articles_with_balancer_db(){
-        self::api_log("sync_latest_articles_with_balancer_db new","init method");
         // Status change
         RB_Filters_Manager::add_action( "ta_latest_articles_sync", "transition_post_status", function($new_status, $old_status, $post){
 			// Not an article, or older than 20 days
@@ -137,11 +136,9 @@ class TA_Balancer_DB{
 			// no previous status or new status publish
 			if ( $new_status == 'new' || $new_status == 'publish' ){
 				TA_Article_Factory::$use_cache = false;
-                $create = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
+                self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
 
-                self::api_log("sync_latest_articles_with_balancer_db new",$create);
-                return $create;
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
                 self::delete_article($post->ID);
@@ -159,12 +156,10 @@ class TA_Balancer_DB{
             // We don't use $meta_value directly because it may need some proccesing from the TA_Article, like with ta_article_isopinion
             TA_Article_Factory::$use_cache = false;
 
-            $create = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
+            self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
 
             TA_Article_Factory::$use_cache = true;
 
-            self::api_log("sync_latest_articles_with_balancer_db after save hook",$create);
-            return $create;
         }, array(
             'priority'		=> 100,
             'accepted_args'	=> 4,
@@ -174,7 +169,7 @@ class TA_Balancer_DB{
         RB_Filters_Manager::add_action( "ta_latest_articles_deletion_sync", "delete_post", function($postid, $post){
             if(self::post_is_db_compatible($post))
                 self::delete_article($postid);
-                self::api_log("sync_latest_articles_with_balancer_db delete",'delete post');
+
         }, array(
             'priority'		=> 100,
             'accepted_args'	=> 2,
@@ -186,7 +181,6 @@ class TA_Balancer_DB{
     *   in any of the latest articles, it updates the DB.
     */
 	static private function sync_terms_with_balancer_db(){
-        self::api_log("sync_terms_with_balancer_db","init method");
 		$taxonomies = [
 			'ta_article_tag'	=> 'tags',
 			'ta_article_author'	=> 'authors',
@@ -263,7 +257,7 @@ class TA_Balancer_DB{
         // var_dump(wp_list_pluck($query->posts, 'ID'));
         if($articles){
             self::delete_all_articles();
-            $insert = self::make_curl_req(array(
+            self::make_curl_req(array(
                 CURLOPT_URL               	=> self::get_api_endpoint("/api/posts/allposts"),
                 CURLOPT_RETURNTRANSFER    	=> true,
                 CURLOPT_CUSTOMREQUEST 		=> 'POST',
@@ -272,8 +266,6 @@ class TA_Balancer_DB{
                 CURLOPT_SSL_VERIFYHOST      => 0,
                 CURLOPT_VERBOSE             => true
             ));
-            self::api_log("insert_latest_articles",$insert);
-            return $insert;
         }
     }
 
@@ -303,7 +295,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("create_or_update_article",$insert);
+        //self::api_log("create_or_update_article",$insert);
         return $insert;
     }
 
@@ -321,7 +313,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("delete_article",$delete);
+        //self::api_log("delete_article",$delete);
         return $delete;
     }
 
@@ -344,7 +336,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("delete_term",$delete);
+        //self::api_log("delete_term",$delete);
         return $delete;
     }
 
@@ -361,7 +353,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("delete_all_articles",$delete);
+        //self::api_log("delete_all_articles",$delete);
         return $delete;
     }
 
@@ -380,7 +372,7 @@ class TA_Balancer_DB{
             CURLOPT_VERBOSE             => true
         ));
 
-        self::api_log("update_author",$update);
+        //self::api_log("update_author",$update);
         return $update;
     }
 }
