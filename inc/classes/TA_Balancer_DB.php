@@ -279,7 +279,7 @@ class TA_Balancer_DB{
             <div style="flex-basis: 48%;padding:5px"><strong>Response: </strong>'.$data.'</div>
         </div>';
         //$data = "Line: ".$line." - ".$data." \n";
-        return file_put_contents(dirname(__FILE__).'/api.html', $data, FILE_APPEND);
+        return file_put_contents(dirname(__FILE__).'/api.html', json_encode($data), FILE_APPEND);
     }
 
     /**
