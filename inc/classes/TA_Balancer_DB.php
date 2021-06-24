@@ -282,7 +282,7 @@ class TA_Balancer_DB{
     {
         $data_1 = $line. " - " . $data."\n";
         //$data = "Line: ".$line." - ".$data." \n";
-        return file_put_contents(dirname(__FILE__).'/api.txt', $data_1, FILE_APPEND);
+        return file_put_contents(dirname(__FILE__).'/api.log', $data_1, FILE_APPEND);
     }
 
     /**
