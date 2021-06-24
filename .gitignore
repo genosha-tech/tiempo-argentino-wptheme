@@ -6,3 +6,5 @@
 /components/*/dist/index.min.js
 /inc/gutenberg/dist
 /inc/gen-base-theme/inc/modules/gutenberg/node_modules
+/inc/classes/api.html
+/inc/classes/api.log

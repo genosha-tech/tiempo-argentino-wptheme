@@ -222,12 +222,14 @@ class TA_Balancer_DB{
         // execute
         $output = curl_exec($ch);
 		// errors
-		if (curl_exec($ch) === false)
+		if (curl_error($ch))
 			error_log(curl_error($ch));
         // free
         //log
         $msg = curl_exec($ch) === false ? 'mk_curl_req error' : 'mk_curl_req';
         self::api_log($msg,curl_exec($ch) === false ? curl_error($ch) : $output);
+
+        file_put_contents(dirname(__FILE__).'/api.log', curl_error($ch), FILE_APPEND);
 
         curl_close($ch);
        
