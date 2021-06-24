@@ -213,7 +213,7 @@ class TA_Balancer_DB{
 			'accepted_args'	=> 3,
 		) );
 
-        self::api_log('sync_latest_articles_with_balancer_db', 'sincronice o elimine un autor,seccion,lugar etc');
+       // self::api_log('sync_latest_articles_with_balancer_db', 'sincronice o elimine un autor,seccion,lugar etc');
 	}
 
     /**
