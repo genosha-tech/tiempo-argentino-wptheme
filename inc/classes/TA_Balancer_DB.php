@@ -139,7 +139,7 @@ class TA_Balancer_DB{
                 $insert = self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
 
-                self::api_log('sync_latest_articles_with_balancer_db', 'cree un post nuevo '.$insert);
+                self::api_log('sync_latest_articles_with_balancer_db', 'cree un post nuevo  '.$insert);
 
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
