@@ -228,8 +228,8 @@ class TA_Balancer_DB{
 			error_log(curl_error($ch));
         // free
         //log
-        $msg = curl_exec($ch) === false ? 'mk_curl_req error' : 'mk_curl_req';
-        self::api_log($msg,curl_exec($ch) === false ? 'error curl' : 'sin error');
+        //$msg = curl_exec($ch) === false ? 'mk_curl_req error' : 'mk_curl_req';
+        //self::api_log($msg,curl_exec($ch) === false ? 'error curl' : 'sin error');
 
         //file_put_contents(dirname(__FILE__).'/api.log', $output, FILE_APPEND);
 
@@ -267,8 +267,6 @@ class TA_Balancer_DB{
                 CURLOPT_CUSTOMREQUEST 		=> 'POST',
                 CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
                 CURLOPT_POSTFIELDS			=> json_encode($articles),
-                CURLOPT_SSL_VERIFYHOST      => 0,
-                CURLOPT_VERBOSE             => true
             ));
         }
     }
@@ -281,7 +279,7 @@ class TA_Balancer_DB{
             <div style="flex-basis: 48%;padding:5px"><strong>Response: </strong>'.$data.'</div>
             <hr />
         </div>';
-        return file_put_contents(dirname(__FILE__).'/api.html', $data_1, FILE_APPEND);
+        //return file_put_contents(dirname(__FILE__).'/api.html', $data_1, FILE_APPEND);
     }
 
     /**
@@ -296,8 +294,6 @@ class TA_Balancer_DB{
             CURLOPT_CUSTOMREQUEST 		=> 'PUT',
             CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
             CURLOPT_POSTFIELDS			=> json_encode($article_data),
-            CURLOPT_SSL_VERIFYHOST      => 0,
-            CURLOPT_VERBOSE             => true,
         ));
 
         self::api_log("create_or_update_article",$insert);
@@ -314,8 +310,6 @@ class TA_Balancer_DB{
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'DELETE',
             CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
-            CURLOPT_SSL_VERIFYHOST      => 0,
-            CURLOPT_VERBOSE             => true
         ));
 
         return $delete;
@@ -335,9 +329,7 @@ class TA_Balancer_DB{
             CURLOPT_POSTFIELDS			=> json_encode(array(
                 'taxonomy'  => $taxonomy,
                 'id'        => $term_id,
-            )),
-            CURLOPT_SSL_VERIFYHOST      => 0,
-            CURLOPT_VERBOSE             => true
+            ))
         ));
         return $delete;
     }
@@ -351,8 +343,6 @@ class TA_Balancer_DB{
             CURLOPT_RETURNTRANSFER    	=> true,
             CURLOPT_CUSTOMREQUEST 		=> 'DELETE',
             CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
-            CURLOPT_SSL_VERIFYHOST      => 0,
-            CURLOPT_VERBOSE             => true
         ));
         return $delete;
     }
@@ -368,8 +358,6 @@ class TA_Balancer_DB{
             CURLOPT_CUSTOMREQUEST 		=> 'PUT',
             CURLOPT_HTTPHEADER			=> array('Content-Type: application/json', self::get_api_key_header()),
             CURLOPT_POSTFIELDS			=> json_encode($author_data),
-            CURLOPT_SSL_VERIFYHOST      => 0,
-            CURLOPT_VERBOSE             => true
         ));
 
         return $update;
