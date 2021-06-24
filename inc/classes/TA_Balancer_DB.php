@@ -139,6 +139,8 @@ class TA_Balancer_DB{
                 self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post) ) );
 				TA_Article_Factory::$use_cache = true;
 
+                self::api_log('sync_latest_articles_with_balancer_db', 'cree un post nuevo');
+
 			}
 			else if ( $old_status == 'publish' ) // from published to something else
                 self::delete_article($post->ID);
@@ -159,6 +161,8 @@ class TA_Balancer_DB{
             self::create_or_update_article( self::get_article_data( TA_Article_Factory::get_article($post_id), array(self::$metakeys[$meta_key]) ) );
 
             TA_Article_Factory::$use_cache = true;
+
+            self::api_log('sync_latest_articles_with_balancer_db', 'actualice un post nuevo');
 
         }, array(
             'priority'		=> 100,
@@ -208,6 +212,8 @@ class TA_Balancer_DB{
 			'priority'		=> 100,
 			'accepted_args'	=> 3,
 		) );
+
+        self::api_log('sync_latest_articles_with_balancer_db', 'sincronice o elimine un autor,seccion,lugar etc');
 	}
 
     /**
@@ -227,9 +233,9 @@ class TA_Balancer_DB{
         // free
         //log
         $msg = curl_exec($ch) === false ? 'mk_curl_req error' : 'mk_curl_req';
-        self::api_log($msg,curl_exec($ch) === false ? curl_error($ch) : $output);
+        self::api_log($msg,curl_exec($ch) === false ? 'error curl' : 'sin error');
 
-        file_put_contents(dirname(__FILE__).'/api.log', curl_error($ch), FILE_APPEND);
+        file_put_contents(dirname(__FILE__).'/api.log', $output, FILE_APPEND);
 
         curl_close($ch);
        
