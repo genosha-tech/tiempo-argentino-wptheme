@@ -118,7 +118,7 @@
                         </button>
                     </div>
                     <div class="tiempo-logo mr-lg-5">
-                        <a href="<?php echo home_url() ?>"><img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/tiempo-logo.svg" class="img-fluid" alt=""></a>
+                        <a href="<?php echo home_url() ?>"><img src="<?php echo TA_IMAGES_URL; ?>/tiempo-logo.svg" class="img-fluid" alt=""></a>
                     </div>
                     <div class="weather d-none d-lg-flex flex-column align-content-center justify-content-start text-left  mr-5">
                         <div class="mt-2">
@@ -134,12 +134,12 @@
                 <div class="d-none d-lg-flex justify-content-between align-items-center">
                     <button id="search-btn" class="search-icon mr-3 btn btn-link d-flex collapsed" data-toggle="collapse" data-target="#searchBar" aria-expanded="false" aria-controls="searchBar">
                         <div class="d-flex align-items-center">
-                            <img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/search-icon.svg" class="img-fluid" alt="">
+                            <img src="<?php echo TA_IMAGES_URL; ?>/search-icon.svg" class="img-fluid" alt="">
                         </div>
                     </button>
                     <?php if (!is_user_logged_in()) : ?>
                         <div class="profile-icon">
-                            <a href="<?php echo get_permalink(get_option('user_panel_page')) ?>"><img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/profile-icon.svg" class="img-fluid" alt=""></a>
+                            <a href="<?php echo get_permalink(get_option('user_panel_page')) ?>"><img src="<?php echo TA_IMAGES_URL; ?>/profile-icon.svg" class="img-fluid" alt=""></a>
                         </div>
                     <?php else : ?>
                         <div class="logged-user mx-2">
@@ -162,7 +162,7 @@
                 </div>
                 <div class="asociate-banner position-relative ml-md-3">
                     <div class="asociate-banner-bg h-100 ">
-                        <a href="<?php echo get_permalink(get_option('subscriptions_loop_page')) ?>"> <img src="<?php echo TA_THEME_URL; ?>/markup/assets/images/asociate-banner.svg" class="img-fluid" alt=""></a>
+                        <a href="<?php echo get_permalink(get_option('subscriptions_loop_page')) ?>"> <img src="<?php echo TA_IMAGES_URL; ?>/asociate-banner.svg" class="img-fluid" alt=""></a>
                     </div>
                     <div class="asociate-banner-content position-absolute">
                         <div class="separator"></div>
