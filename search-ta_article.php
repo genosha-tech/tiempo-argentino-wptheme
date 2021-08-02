@@ -27,6 +27,7 @@ $articles = get_ta_articles_from_query($wp_query);
             'articles'              => $articles,
             // 'max_num_pages'         => $wp_query->max_num_pages,
             // 'current_page'          => max(1, get_query_var('paged')),
+            'current_page'          => $_POST['page'] ?? 1,
         )); ?>
         <?php endif; ?>
     </div>

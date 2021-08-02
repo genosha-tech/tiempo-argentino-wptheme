@@ -108,6 +108,7 @@ class TA_Theme
 
 		self::redirect_searchs();
 		self::filter_contents();
+		self::searchpage();
 
 		add_action('admin_head',[self::class,'not_admin']);
 	}
@@ -196,6 +197,45 @@ class TA_Theme
 
 			return $template;
 		});
+	}
+
+	/**
+	*	Steps related to the search results page
+	*/
+	static private function searchpage(){
+		function is_search_results_page(){
+			return ($_POST['s'] ?? false) && ($_POST['post_type'] ?? false) == 'ta_article';
+		}
+
+		/**
+		*	If the request has the search POST fields, sets the correct template
+		*	and enqueue necessary scripts
+		*/
+		RB_Filters_Manager::add_action( 'ta_searchpage_front_script', 'template_include', function($template) {
+		    if ( is_search_results_page() ) {
+		        $template = TA_THEME_PATH . '/search-ta_article.php';
+				wp_enqueue_script("ta-searchpage-front-block-js",'',TA_THEME_VERSION);
+				wp_localize_script(
+					'ta-searchpage-front-block-js',
+					'TASearchQuery',
+					array(
+						's' 		=> $_POST['s'],
+						'page' 		=> $_POST['page'] ?? 1,
+					),
+				);
+		    }
+
+			return $template;
+		} );
+
+		/**
+		*	Sets the correct page in the post query for the search results
+		*/
+		RB_Filters_Manager::add_action( 'ta_search_results_page_query_page', 'pre_get_posts', function( $query ){
+			if( is_search_results_page() && $query->is_main_query() ){
+				$query->set( 'paged', intval($_POST['page']) ?? 1 );
+			}
+		} );
 	}
 
 	static private function remove_quick_edit()

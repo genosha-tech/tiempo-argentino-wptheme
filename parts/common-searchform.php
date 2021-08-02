@@ -6,7 +6,7 @@ $default_args = array(
 );
 extract(array_merge($default_args, $args));
 ?>
-<form id="searchform" method="get" action="<?php echo home_url('/'); ?>">
+<form id="searchform" method="POST" action="<?php echo home_url('/'); ?>">
     <div class="search-bar-container px-3 pt-3 pb-4">
         <?php if($close_button): ?>
         <div class="close d-flex d-lg-none justify-content-end">
