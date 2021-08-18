@@ -109,7 +109,7 @@ class TA_Theme
 		self::redirect_searchs();
 		self::filter_contents();
 		self::searchpage();
-
+    
 		add_action('admin_head',[self::class,'not_admin']);
 	}
 
